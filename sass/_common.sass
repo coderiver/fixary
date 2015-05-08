@@ -1,60 +1,66 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book", Arial, sans-serif 
-// insert pics into css
-// div
-// 	+pic("blabla.png")
-// span
-// 	+png(blabla)
-// p
-// 	+jpg(bla)
-
-
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700")
+//mixin
+=os
+	font-family: 'Open Sans', Arial, sans-serif
+=os-l
+	font-family: 'Open Sans', Arial, sans-serif
+	font-weight: 300 
 body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
-
-
-// common blocks      
+	background-color: #03283D 
+	
+a
+	text-decoration: none
+input[type="button"], input[type="submit"]
+	cursor: pointer
+// common blocks  
+.header
+	width: 100% 
+	+clr
+	a
+		color: #FFF 
+	.header__in
+		width: 90%
+		margin: 0 auto  
+.header__nav
+	float: left
+	ul
+		+clr
+		margin-left: 28px 
+	li
+		float: left
+		a
+			display: block
+			padding: 40px 18% 0
+			font-size: 20px 
+			+os-l
+			opacity: .5
+			position: relative
+			transition: .2s
+			&:hover
+				opacity: 1 
+				&:after
+					content: ''
+					display: block
+					position: absolute 
+					top: 1px
+					left: 50%
+					+translate(-50%,0) 
+					width: 80%
+					border-bottom: 3px solid #fff 
+			
+		
+.header__contact
+	float: right
+	p
+		float: left
+.header__logo
+	float: left
+	margin-top: 30px 
+.logo
+	+s(logo)
 
 
 
