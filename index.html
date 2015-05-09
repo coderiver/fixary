@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
+	<title>Fixary</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <meta name="viewport" content="width=1200"> -->
@@ -28,84 +28,89 @@
 			</ul>
 		</nav>
 		<div class="header__contact">
-			<p class="call"><i class="icon-phone"></i><a href="tel:+18884241328">+1 888 424 13 28</a></p>
-			<p class="profile"><i class="icon-profile"></i><a href="#">Log In</a></p>
+			<p class="call"><a href="tel:+18884241328"><i class="icon-phone"></i>+1 888 424 13 28</a></p>
+			<p class="profile"><a href="#"><i class="icon-user"></i>Log In</a></p>
 		</div>
 	</div></header>
 	<!-- END header -->
 
-	<div class="main">
 		<!-- BEGIN greet  -->
 		<div class="greet"><div class="greet__in">
 			<div class="greet__text">
 				<h1>Say hello to good riddance!</h1>
 				<p>Between your computer’s problem and its resolution is where Fixary lies</p>
-				<form action="" class="greet__form">
-					<div class="dropdown greet__form_item">
-						<input type="button" class="js-drop" value="What can we help with?">
-						<ul class="dropdown__menu">
-							<li class="">irus and Spyware Removal</li>
-							<li class="">Computer Troubleshooting</li>
-							<li class="">PC or Mac Set Up</li>
-							<li class="">PC or Mac Tune Up</li>
-							<li class="">ID Protection Settings</li>
-							<li class="">Email Set Up</li>
-							<li class="">Write Your Problem ...</li>
-						</ul>
-					</div>
-					<input type="email" name="email" class="greet__form_item" plcaeholder="Your email">
-					<input type="text" name="name" class="greet__form_item" plcaeholder="Your name">
-					<input type="submit" class="btn greet__submit" value="Send">
-				</form>
 			</div>
+			<form action="" class="greet__form">
+					<select name="" id="" class="dropdown greet__form_item">
+						<option selected disabled>What can we help with?</option>
+						<option>Virus and Spyware Removal</option>
+						<option>Computer Troubleshooting</option>
+						<option>PC or Mac Set Up</option>
+						<option>PC or Mac Tune Up</option>
+						<option>ID Protection Settings</option>
+						<option>Email Set Up</option>
+						<option>Write Your Problem ...</option>
+					</select>
+				<!-- <div class="dropdown greet__form_item">
+					<input type="button" class="js-drop" value="What can we help with?">
+					<ul class="dropdown__menu">
+						<li class="">Virus and Spyware Removal</li>
+						<li class="">Computer Troubleshooting</li>
+						<li class="">PC or Mac Set Up</li>
+						<li class="">PC or Mac Tune Up</li>
+						<li class="">ID Protection Settings</li>
+						<li class="">Email Set Up</li>
+						<li class="">Write Your Problem ...</li>
+					</ul>
+				</div> -->
+				<input type="email" required name="email" class="greet__form_item greet__form_email" placeholder="Your email">
+				<input type="text" required name="name" class="greet__form_item greet__form_name" placeholder="Your name">
+				<input type="submit" class="btn greet__submit" value="Send">
+			</form>
 		</div></div>
 		<!-- END greet -->
 
-
+	<div class="main">
 		<!-- BEGIN about  -->
 		<div class="about"><div class="about__in">
 			<h2 class="block_header">About</h2>
-			<div class="about__content"></div>
+			<div class="about__content">
 				<div class="about__text">
 					<p>No matter where in the world you live, no matter when you want to contact us, we can bring a certified PC or Mac technician to you in seconds via a remote connection.</p>
 					<p>Mission statement To build long term relationships with our customers and clients and provide exceptional customer services by pursuing business through intellectual innovation and advanced technology. Core values We believe in treating our customers with respect and faith We grow through creativity, invention and innovation. Integrate honesty, integrity and business ethics into all aspects of our business functioning. You may be wondering why our logo.</p>
 				</div>
+
 			</div>
 		</div></div>
 		<!-- END about -->
 
 
 		<!-- BEGIN serivces  -->
-		<div class="serivces"><div class="serivces__in">
+		<div class="services"><div class="services__in">
 			<h2 class="block_header">Services</h2>
 			<div class="services__content">
 				<div class="services__item">
-					<h3 class="services__item_header"><i class="icon-virus"></i>Virus and spyware removal</h3>
+					<h3 class="services__item_header"><i class="icon-virus"></i><span>Virus and <br> spyware removal</span></h3>
 					<p class="services__item_text">If you are disappointed with your computer performance this is the right time to contact us. We will check your pc/mac for malware, unnecessary software, optimize system boot time and resources consumption.</p>
 				</div>
 				<div class="services__item">
-					<h3 class="services__item_header"><i class="icon-comp"></i>Computer
-	Troubleshooting</h3>
+					<h3 class="services__item_header"><i class="icon-comp"></i><span>Computer <br> Troubleshooting</span></h3>
 					<p class="services__item_text">We will check your pc/mac for malware, unnecessary software, optimize system boot time and resources consumption.</p>
 				</div>
 				<div class="services__item">
-					<h3 class="services__item_header"><i class="icon-setup"></i>PC or Mac
-	Set Up</h3>
+					<h3 class="services__item_header"><i class="icon-setup"></i><span>PC or Mac	<br> Set Up</span></h3>
 					<p class="services__item_text">If you are disappointed with your computer performance this is the right time to contact us. We will check your pc/mac for malware, unnecessary </p>
 				</div>
 				<div class="services__item">
-					<h3 class="services__item_header"><i class="icon-tuneup"></i>PC or Mac
-	Tune Up</h3>
+					<h3 class="services__item_header"><i class="icon-tuneup"></i><span>PC or Mac <br> Tune Up</span></h3>
 					<p class="services__item_text">We will check your pc/mac for malware, unnecessary software, optimize system boot time and resources consumption.</p>
 				</div>
 				<div class="services__item">
-					<h3 class="services__item_header"><i class="icon-protect"></i>ID Protection
-	Settings</h3>
+					<h3 class="services__item_header"><i class="icon-protect"></i><span>ID Protection <br> Settings</span></h3>
 					<p class="services__item_text">Creating and set up your account via any mail system. We optimize spam filters/ignore list to prevent you from receiving unwanted e-mails.</p>
 				</div>
 				<div class="services__item">
-					<h3 class="services__item_header"><i class="icon-email"></i>Email
-	Set Up</h3>
+					<h3 class="services__item_header"><i class="icon-email"></i><span>Email	<br> Set Up</span></h3>
 					<p class="services__item_text">If you are disappointed with your computer performance this is the right time to contact us. We will check your pc/mac for malware, unnecessary </p>
 				</div>
 			</div>
@@ -116,7 +121,7 @@
 		<div class="pricing"><div class="pricing__in">
 			<h2 class="block_header">Pricing plans</h2>
 			<div class="pricing__content">
-				<div class="table">
+				<div class="table table--gray is-left">
 					<div class="table__header">
 						<h4 class="table__header_text">Essential</h4>
 						<div class="table__header_number">
@@ -134,7 +139,7 @@
 						<input type="button" class="table__btn" value="Get Started">
 					</div>
 				</div>
-				<div class="table table--center table--orange">
+				<div class="table is-center table--orange">
 					<div class="table__header">
 						<h4 class="table__header_text">Preferred</h4>
 						<div class="table__header_number">
@@ -160,7 +165,7 @@
 						<input type="button" class="table__btn" value="Get Started">
 					</div>
 				</div>
-				<div class="table">
+				<div class="table table--gray is-right">
 					<div class="table__header">
 						<h4 class="table__header_text">Premium</h4>
 						<div class="table__header_number">
@@ -190,8 +195,7 @@
 			</div>
 		</div>
 		<div class="pricing__footer">
-			<p class="pricing__footer_text">Easy purchase a <b>Fixary subscription</b> 
-			with your Visa, MasterCard.</p>
+			<div class="pricing__footer_text"><p>Easy purchase a <b>Fixary subscription</b> <br>	with your Visa, MasterCard.</p></div>
 		</div>
 		</div>
 		<!-- END pricing -->
@@ -200,36 +204,45 @@
 		<!-- BEGIN news  -->
 		<div class="news"><div class="news__in">
 			<h2 class="block_header">News</h2>
-			<article class="news__item">
-				<div class="news__item_heading">
-					<h5 class="news__item_heading_text">Get -50% for Preffered Pricing Plan</h5>
-					<p><time pubdate>20.03.2015</time></p>
+			<div class="news__container"><div class="news__container_wrap">
+				<article class="news__item">
+					<a href="#">
+						<div class="news__item_heading">
+							<h5 class="news__item_heading_text">Get -50% for Preffered Pricing Plan</h5>
+							<time pubdate>20.03.2015</time>
+						</div>
+						<div class="news__item_main">
+							<p>Creating and set up your account via any mail system. We optimize spam filters/ignore list to prevent you from </p>
+						</div>
+					</a>
+				</article>
+				<article class="news__item">
+					<a href="#">
+						<div class="news__item_heading">
+							<h5 class="news__item_heading_text">Happy Easter with
+			Fixary</h5>
+							<time pubdate>14.03.2015</time>
+						</div>
+						<div class="news__item_main">
+							<p>Creating and set up your account via any mail system. We optimize spam filters/ignore list to prevent you from </p>
+						</div>
+					</a>
+				</article>
+				<article class="news__item">
+					<a href="">
+						<div class="news__item_heading">
+							<h5 class="news__item_heading_text">Make your PC faster</h5>
+							<time pubdate>5.01.2015</time>
+						</div>
+						<div class="news__item_main">
+							<p>Creating and set up your account via any mail system. We optimize spam filters/ignore list to prevent you from receiving unwanted e-mails.</p>
+						</div>
+					</a>
+				</article>
 				</div>
-				<div class="news__item_main">
-					<p>Creating and set up your account via any mail system. We optimize spam filters/ignore list to prevent you from </p>
+				<div class="show_more">
+					<button class="js-showmore btn_show"><i class="icon-show"></i>more news</button>
 				</div>
-			</article>
-			<article class="news__item">
-				<div class="news__item_heading">
-					<h5 class="news__item_heading_text">Happy Easter with
-	Fixary</h5>
-					<p><time pubdate>14.03.2015</time></p>
-				</div>
-				<div class="news__item_main">
-					<p>Creating and set up your account via any mail system. We optimize spam filters/ignore list to prevent you from </p>
-				</div>
-			</article>
-			<article class="news__item">
-				<div class="news__item_heading">
-					<h5 class="news__item_heading_text">Make your PC faster</h5>
-					<p><time pubdate>5.01.2015</time></p>
-				</div>
-				<div class="news__item_main">
-					<p>Creating and set up your account via any mail system. We optimize spam filters/ignore list to prevent you from </p>
-				</div>
-			</article>
-			<div class="show_more">
-				<button class="js-showmore btn_show"><i class="icon-"></i>more news</button>
 			</div>
 		</div></div>
 		<!-- END news -->

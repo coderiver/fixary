@@ -4,7 +4,10 @@
 	font-family: 'Open Sans', Arial, sans-serif
 =os-l
 	font-family: 'Open Sans', Arial, sans-serif
-	font-weight: 300 
+	font-weight: 300
+=os-sb
+	font-family: 'Open Sans', Arial, sans-serif
+	font-weight: 600 
 body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
@@ -15,15 +18,70 @@ a
 	text-decoration: none
 input[type="button"], input[type="submit"]
 	cursor: pointer
+i[class^="icon-"]
+	display: inline-block
+i.icon-phone
+	+s(icon-phone)
+i.icon-user
+	+s(icon-user)
+i.icon-drop
+	+s(drop_arr)
+i.icon-setup
+	// background: url(../img/icons/icon-setup.svg) no-repeat
+	// +background-size(contain)
+	// width: 83px
+	// height: 83px  
+	+s(icon-setup)
+i.icon-virus
+	// background: url(../img/icons/icon-virus.svg) no-repeat
+	// +background-size(contain)
+	// width: 83px
+	// height: 83px 
+	+s(icon-virus)
+	
+	
+
+i.icon-comp
+	// background: url(../img/icons/icon-comp.svg) no-repeat
+	// +background-size(contain)
+	// width: 83px
+	// height: 83px
+	+s(icon-comp)
+	 
+
+i.icon-tuneup
+	// background: url(../img/icons/icon-tuneup.svg) no-repeat
+	// +background-size(contain)
+	// width: 83px
+	// height: 83px 
+	+s(icon-tuneup)
+
+i.icon-protect
+	// background: url(../img/icons/icon-protect.svg) no-repeat
+	// +background-size(contain)
+	// width: 83px
+	// height: 83px 
+	+s(icon-protect)
+
+i.icon-email
+	// background: url(../img/icons/icon-email.svg) no-repeat
+	// +background-size(contain)
+	// width: 83px
+	// height: 83px 
+	+s(icon-email)
+i.icon-show
+	+s(icon-show)
+
 // common blocks  
+
 .header
 	width: 100% 
-	+clr
 	a
 		color: #FFF 
 	.header__in
-		width: 90%
+		width: 95%
 		margin: 0 auto  
+		+clr
 .header__nav
 	float: left
 	ul
@@ -33,140 +91,67 @@ input[type="button"], input[type="submit"]
 		float: left
 		a
 			display: block
-			padding: 40px 18% 0
+			padding: 40px 16px 0
 			font-size: 20px 
 			+os-l
 			opacity: .5
 			position: relative
 			transition: .2s
+			&:after
+				content: ''
+				display: none
+				position: absolute 
+				top: 1px
+				left: 50%
+				+translate(-50%,0) 
+				width: 80%
+				border-bottom: 3px solid #fff 
 			&:hover
 				opacity: 1 
 				&:after
-					content: ''
-					display: block
-					position: absolute 
-					top: 1px
-					left: 50%
-					+translate(-50%,0) 
-					width: 80%
-					border-bottom: 3px solid #fff 
-			
+					display: block			
 		
 .header__contact
 	float: right
+	width: 30% 
+	+clr
+	text-align: right
 	p
-		float: left
+		display: inline-block
+		padding: 40px 0 0 15%
+		text-align: right
+		&:first-child
+			padding-left: 0 
+		a
+			font-size: 22px 
+			opacity: .5
+			+os-l
+			&:hover
+				opacity: 1
+				transition: .2s 
+
+	p i
+		position: relative
+		left: -14px 
+		
 .header__logo
 	float: left
 	margin-top: 30px 
 .logo
 	+s(logo)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.block_header
+	+os-l
+	font-size: 52px 
+	text-align: center
+	letter-spacing: 1px  
+	
+.main
+	width: 84% 
+	max-width: 1200px 
+	background-color: #FFF 
+	margin: 0 auto 
+	+border-radius(5px)
+	.block_header
+		color: #000 
 

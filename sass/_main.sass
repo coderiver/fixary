@@ -1,1 +1,356 @@
 // Normally mainpage styles
+.greet
+	padding: 215px 0 320px
+	.greet__in
+		text-align: center
+.greet__text
+	color: #FFF 
+	h1
+		+os-l
+		font-size: 48px 
+	p
+		+os-l
+		font-size: 20px
+		padding-top: 10px 
+		opacity: .7 
+.greet__form
+	font-size: 0 
+	padding-top: 40px  
+	
+	.greet__form_item, .dropdown input
+		display: inline-block
+		vertical-align: top
+		font-size: 24px 
+		padding: 0px 15px  
+		margin: 0 3px 
+		height: 55px 
+		+os-l
+		+border-radius(3px)  
+		background-color: #fff 
+		opacity: .3
+		margin: 0 3px 
+		color: #001D34 
+		text-align: left
+		+placeholder-color(rgba(#001d34, .3))
+		&:hover
+			opacity: .6
+		&:focus, &.filled
+			opacity: 1
+
+	.js-drop
+		box-sizing: border-box
+
+.dropdown
+	width: 370px 
+	border: 0px
+	outline: none
+	+appearance(none)
+	appearance: none
+	cursor: pointer
+	background: url('../img/icons/drop_arr.png') no-repeat  95% 53%  
+
+.greet__form_email
+	box-sizing: border-box
+	width: 315px 
+	padding: 20px 15px 
+.greet__form_name
+	box-sizing: border-box
+	width: 235px 
+	padding: 20px 15px 
+.greet__submit 
+	box-sizing: border-box
+	width: 115px 
+	padding: 0px 15px 
+	height: 55px 
+	margin: 0 3px
+	opacity: 1 
+	background-color: #F7B30E
+	color: #fff
+	+border-radius(3px)  
+	+os-l
+	font-size: 24px 
+.dropdown__menu
+	display: none
+
+//----- about		
+
+.about
+	width: 100%
+	padding-bottom: 155px 
+	.block_header
+		padding: 88px 0 66px
+.about__content
+	margin-left: 9%
+	position: relative
+	+clr
+.about__text
+	p
+		padding-bottom: 40px
+		+os-l
+		font-size: 19px
+		width: 47%
+		line-height: 1.57em  
+		position: relative
+		z-index: 2 
+		&:last-child
+			padding-bottom: 0
+	&:before
+		content: ''
+		position: absolute
+		right: 0
+		+png(comps)
+		z-index: 1 
+		
+//----- serivces
+.services
+	background-color: #faf1dc 
+	.block_header
+		padding-top: 99px 
+.services__content
+	margin: 0 auto
+	padding: 63px 0 133px
+	width: 75% 
+	+clr
+.services__item
+	box-sizing: border-box
+	padding: 5% 5% 5% 7%
+	width: 50% 
+	height: 255px 
+	float: left
+	vertical-align: top
+	cursor: pointer
+	&:hover
+		+box-shadow(0 0 0 1px rgba(black, .6) inset)
+		opacity: .7 
+		+transition(.1s)
+	.services__item_header
+		+os-l
+		font-size: 28px
+		vertical-align: top 
+		display: block
+		+clr
+		i
+			float: left
+			padding-right: 8% 
+		span
+			display: inline-block
+			line-height: 1.2em 
+	.services__item_text
+		+os
+		font-size: 16px 
+		margin-top: 15px 
+		
+
+//----- price
+.pricing
+	padding-bottom: 100px 
+	.block_header
+		padding: 127px 0 100px 
+.pricing__content
+	width: 86%
+	margin: 0 auto 
+	position: relative
+	+clr
+	.table
+		width: 30% 
+		+border-radius(3px)
+		padding-bottom: 46px 
+	.table.is-left
+		float: left
+	.table.is-right
+		float: right
+	.table.is-center
+		position: absolute
+		left: 50%
+		+translate(-50%,0) 
+	.table__header
+		text-align: center
+		.table__header_text
+			+os-l
+			font-size: 35px 
+			padding: 24px 0 
+		.table__header_number
+			width: 103%  
+			+translate(-1.5%,0) 
+			padding: 24px 0
+		.table__price
+			+os-l
+			font-size: 80px
+			sup
+				font-size: 0.4em
+				vertical-align: top
+				display: inline-block
+				margin-top: 0.5em 
+				opacity: .7 
+		.table__price_about
+			+os-l
+			font-size: 24px 
+			b
+				+os-sb
+	.table__content
+		.table__features
+			+os-l
+			font-size: 16px
+			margin: 38px 0 31px percentage(41px / 308px) 
+			li
+				line-height: 2em   
+			li:before
+				content: ''
+				display: inline-block
+				width: 5px
+				height: 5px
+				margin-right: 7px 
+				vertical-align: middle
+				background-color: #b3b3b3 
+				+border-radius(50%) 
+	.table__btn
+		display: block
+		width: percentage(230px / 308px)
+		height: 65px 
+		margin: 0 auto  
+		+os
+		font-size: 26px  
+		+border-radius(3px)
+		
+.table--gray
+	+box-shadow(0 0 0 1px #e5e5e5 inset)
+	margin-top: 24px 
+	.table__header_number
+		background-color: #f7f7f7
+	.table__btn
+		background-color: transparent
+		color: #5A5A5A 
+		+box-shadow(0 0 0 1px #b2b2b2 inset)
+		&:hover
+			+box-shadow(0 0 0 2px #000 inset)
+			color: #000 
+.table--orange
+	+box-shadow(0 0 0 1px #f3af0a inset)
+	.table__header_number
+		background-color: #f9eac5
+		+border-radius(2px) 
+	.table__btn
+		background-color: #f7b30e
+		color: #FFF 
+		&:hover
+			opacity: .7
+
+.pricing__footer
+	padding-top: 30px 
+	.pricing__footer_text
+		+os
+		font-size: 26px 
+		vertical-align: middle
+		p
+			display: inline-block
+			position: relative
+			top: 25px 
+			b
+				+os-sb
+		&:before
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			margin-right: percentage(50px / 1200px)  
+			+png(hand)
+
+//----- news
+.news
+	background-color: #e9f2f4 
+	padding-bottom:  80px
+	.block_header
+		padding: 62px 0 70px 
+	.news__in
+		+clr
+	.show_more
+		text-align: center
+		button
+			color: #096272 
+			background: transparent
+			opacity: .7
+			+os-l
+			font-size: 20px 
+			i
+				position: relative
+				top: 5px 
+				padding-right: 13px 
+			&:hover
+				opacity: 1
+.news__container
+	width: 82%
+	margin: 0 auto
+	.news__container_wrap
+		margin: 0 -7% 0 -4% 
+		+clr 
+		padding-bottom: 85px 
+.news__item
+	width: 33%
+	float: left
+	+box-sizing(border-box)
+	padding: 0 3% 
+	> a
+		color: #000 
+		&:hover
+			color: #6DA4B3 
+	.news__item_heading
+		margin-bottom: 10px 
+		.news__item_heading_text 
+			+os-l
+			font-size: 28px 
+			margin-bottom: 5px 
+		time
+			+os-l
+			font-size: 15px 
+	.news__item_main
+		+os
+		font-size: 16px 
+		opacity: .7
+
+//----- advantages
+.advantages
+	.advantages__in
+		position: relative
+		padding-bottom: 280px 
+		&:after
+			content: ''
+			display: block
+			+png(man)
+			position: absolute 
+			bottom: -29px 
+			left: 50%
+			+translate(-50%,0) 
+	.block_header
+		padding: 85px 0 95px
+	.advantages__item
+		width: 50%
+		float: left
+		+box-sizing(border-box)
+		padding-right: 6%  
+		padding-bottom: 60px 
+		&:nth-of-type(2n)
+			padding-left: 6%  
+			padding-right: 0
+	.advantages__item_header
+		padding-bottom: 10px 
+		h5
+			+os-l
+			font-size: 26px 
+	.advantages__item_text
+		+os
+		font-size: 14px 
+		opacity: .7
+		line-height: 1.5em 
+.advantages__content
+	width: 75% 
+	margin: 0 auto
+	+clr
+
+		
+
+
+
+
+			
+
+			
+		
