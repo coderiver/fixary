@@ -31,27 +31,29 @@ input[type="button"], input[type="submit"] { cursor: pointer; }
 
 i[class^="icon-"] { display: inline-block; }
 
-i.icon-phone { background: url('../img/icons-s8bc9a2b801.png') 0 -211px no-repeat; width: 24px; height: 24px; }
+i.icon-phone { background: url('../img/icons-s659f67e492.png') 0 -211px no-repeat; width: 24px; height: 24px; }
 
-i.icon-user { background: url('../img/icons-s8bc9a2b801.png') 0 -486px no-repeat; width: 21px; height: 21px; }
+i.icon-user { background: url('../img/icons-s659f67e492.png') 0 -520px no-repeat; width: 21px; height: 21px; }
 
-i.icon-drop { background: url('../img/icons-s8bc9a2b801.png') 0 -30px no-repeat; width: 21px; height: 11px; }
+i.icon-drop { background: url('../img/icons-s659f67e492.png') 0 -30px no-repeat; width: 21px; height: 11px; }
 
-i.icon-setup { background: url('../img/icons-s8bc9a2b801.png') 0 -317px no-repeat; width: 62px; height: 62px; }
+i.icon-setup { background: url('../img/icons-s659f67e492.png') 0 -317px no-repeat; width: 62px; height: 62px; }
 
-i.icon-virus { background: url('../img/icons-s8bc9a2b801.png') 0 -517px no-repeat; width: 74px; height: 73px; }
+i.icon-virus { background: url('../img/icons-s659f67e492.png') 0 -551px no-repeat; width: 74px; height: 73px; }
 
-i.icon-comp { background: url('../img/icons-s8bc9a2b801.png') 0 -69px no-repeat; width: 76px; height: 58px; }
+i.icon-comp { background: url('../img/icons-s659f67e492.png') 0 -69px no-repeat; width: 76px; height: 58px; }
 
-i.icon-tuneup { background: url('../img/icons-s8bc9a2b801.png') 0 -419px no-repeat; width: 63px; height: 57px; }
+i.icon-tuneup { background: url('../img/icons-s659f67e492.png') 0 -453px no-repeat; width: 63px; height: 57px; }
 
-i.icon-protect { background: url('../img/icons-s8bc9a2b801.png') 0 -245px no-repeat; width: 54px; height: 62px; }
+i.icon-protect { background: url('../img/icons-s659f67e492.png') 0 -245px no-repeat; width: 54px; height: 62px; }
 
-i.icon-email { background: url('../img/icons-s8bc9a2b801.png') 0 -137px no-repeat; width: 69px; height: 64px; }
+i.icon-email { background: url('../img/icons-s659f67e492.png') 0 -137px no-repeat; width: 69px; height: 64px; }
 
-i.icon-show { background: url('../img/icons-s8bc9a2b801.png') 0 -389px no-repeat; width: 22px; height: 20px; }
+i.icon-show { background: url('../img/icons-s659f67e492.png') 0 -389px no-repeat; width: 22px; height: 20px; }
 
-i.icon-close { background: url('../img/icons-s8bc9a2b801.png') 0 -51px no-repeat; width: 8px; height: 8px; }
+i.icon-close { background: url('../img/icons-s659f67e492.png') 0 -51px no-repeat; width: 8px; height: 8px; }
+
+i.icon-teamviewer { background: url('../img/icons-s659f67e492.png') 0 -419px no-repeat; width: 20px; height: 24px; }
 
 .table { display: table; }
 
@@ -83,7 +85,7 @@ i.icon-close { background: url('../img/icons-s8bc9a2b801.png') 0 -51px no-repeat
 
 .header__logo { float: left; margin-top: 30px; }
 
-.logo { background: url('../img/icons-s8bc9a2b801.png') 0 -600px no-repeat; width: 164px; height: 40px; }
+.logo { background: url('../img/icons-s659f67e492.png') 0 -634px no-repeat; width: 164px; height: 40px; }
 
 .block_header { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 52px; text-align: center; letter-spacing: 1px; }
 
@@ -108,10 +110,12 @@ i.icon-close { background: url('../img/icons-s8bc9a2b801.png') 0 -51px no-repeat
 .footer__social .fa { font-size: 26px; vertical-align: bottom; padding-right: 16%; }
 .footer__social span { font-size: 19px; opacity: 0.6; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
 
-.footer__link { text-align: center; margin-top: 50px; }
+.footer__link { margin-top: 50px; padding-bottom: 45px; }
+.footer__link ul { text-align: center; }
 .footer__link li { display: inline-block; text-align: center; }
-.footer__link li a { color: white; padding: 0 17px; display: block; letter-spacing: 1px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 16px; opacity: 0.7; transition: 0.1s; }
+.footer__link li a { color: white; padding: 0 20px; display: block; letter-spacing: 1px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 16px; opacity: 0.7; transition: 0.1s; white-space: nowrap; }
 .footer__link li a:hover { opacity: 1; }
+.footer__link li a i { vertical-align: bottom; padding-right: 3%; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }

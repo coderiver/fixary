@@ -77,7 +77,8 @@ i.icon-show
 i.icon-close
 	+s(icon-close)
 // common blocks  
-
+i.icon-teamviewer
+	+s(icon-teamviewer)
 .table
 	display: table
 .row
@@ -215,19 +216,26 @@ i.icon-close
 		opacity: .6
 		+os-l
 .footer__link
-	text-align: center
+	// text-align: center
 	margin-top: 50px
+	padding-bottom: 45px 
+	ul
+		text-align: center
 	li
 		display: inline-block
 		text-align: center
 		a
 			color: #FFF
-			padding: 0 17px
+			padding: 0 20px
 			display: block
 			letter-spacing: 1px  
 			+os-l
 			font-size: 16px 
 			opacity: .7
 			transition: .1s
+			white-space: nowrap 
 			&:hover
 				opacity: 1
+			i
+				vertical-align: bottom
+				padding-right: 3% 
