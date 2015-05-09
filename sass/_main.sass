@@ -48,6 +48,14 @@
 	appearance: none
 	cursor: pointer
 	background: url('../img/icons/drop_arr.png') no-repeat  95% 53%  
+	option
+		background-color: #FFF 
+		opacity: .6
+		&:hover
+			opacity: .8
+
+		
+
 
 .greet__form_email
 	+box-sizing(border-box)
@@ -365,7 +373,6 @@
 	display: block
 	+clr
 	.location__dot
-		// display: block
 		position: absolute
 		bottom: -20px
 		left: 50%
@@ -379,11 +386,11 @@
 		background-color: rgba(#FFF, .9)
 		// opacity: .3
 		&:hover
-			width: 8px  
-			height: 8px
-			background-color: rgba(#FFF, 1)
+			width: 10px  
+			height: 10px
+			// background-color: rgba(#FFF, 1)
 			// padding: 1px
-			bottom: -22px 
+			// bottom: -22px 
 			// opacity: 1 
 			// border-size: 10px
 
@@ -483,7 +490,7 @@
 		letter-spacing: 0.01em  
 	.author__photo
 		display: table-cell
-		padding: 6px 5% 0 0 
+		padding: 6px 0 0 
 		img
 			width: 77px
 			height: 77px
@@ -492,5 +499,6 @@
 	.comment__info
 		display: table-cell
 		vertical-align: top
+		padding-left: 5%
 		
 

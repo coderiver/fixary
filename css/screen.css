@@ -134,6 +134,8 @@ i.icon-close { background: url('../img/icons-s8bc9a2b801.png') 0 -51px no-repeat
 .greet__form .js-drop { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .dropdown { width: 370px; border: 0px; outline: none; -moz-appearance: none; -webkit-appearance: none; appearance: none; cursor: pointer; background: url("../img/icons/drop_arr.png") no-repeat 95% 53%; }
+.dropdown option { background-color: white; opacity: 0.6; }
+.dropdown option:hover { opacity: 0.8; }
 
 .greet__form_email { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 315px; padding: 20px 15px; }
 
@@ -246,7 +248,7 @@ i.icon-close { background: url('../img/icons-s8bc9a2b801.png') 0 -51px no-repeat
 .location { position: absolute; max-width: 420px; height: auto; display: block; *zoom: 1; }
 .location:after { content: " "; display: table; clear: both; }
 .location .location__dot { position: absolute; bottom: -20px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); width: 8px; height: 8px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2); -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2); box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2); cursor: pointer; background-color: rgba(255, 255, 255, 0.9); }
-.location .location__dot:hover { width: 8px; height: 8px; background-color: white; bottom: -22px; }
+.location .location__dot:hover { width: 10px; height: 10px; }
 
 .location--1 { top: 50px; left: 67px; }
 
@@ -283,6 +285,22 @@ i.icon-close { background: url('../img/icons-s8bc9a2b801.png') 0 -51px no-repeat
 .comment .author__name { font-family: "PT Sans", Arial, sans-serif; font-weight: 700; }
 .comment .author__address { display: inline; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-style: normal; font-size: 20px; }
 .comment .comment__text { font-family: "PT Sans", Arial, sans-serif; font-size: 13px; padding-top: 5px; letter-spacing: 0.01em; }
-.comment .author__photo { display: table-cell; padding: 6px 5% 0 0; }
+.comment .author__photo { display: table-cell; padding: 6px 0 0; }
 .comment .author__photo img { width: 77px; height: 77px; -moz-border-radius: 77px; -webkit-border-radius: 77px; border-radius: 77px; overflow: hidden; }
-.comment .comment__info { display: table-cell; vertical-align: top; }
+.comment .comment__info { display: table-cell; vertical-align: top; padding-left: 5%; }
+
+.out__eula .main { margin-top: 82px; position: relative; max-width: 1180px; }
+
+.eula .block_header { padding: 88px 0 65px; }
+
+.eula__content { margin: 0 auto; }
+
+.eula__main_header { font-family: "Open Sans", Arial, sans-serif; font-weight: 600; font-size: 22px; text-align: center; padding-bottom: 32px; }
+
+.eula__paragraph { padding: 0 7.5%; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 18px; padding-bottom: 30px; line-height: 1.7em; }
+
+.eula__header { padding: 0 7.5%; font-family: "Open Sans", Arial, sans-serif; font-weight: 600; font-size: 20px; }
+
+.eula__img { position: relative; width: 103%; height: auto; left: -1.5%; margin-bottom: 30px; *zoom: 1; }
+.eula__img:after { content: " "; display: table; clear: both; }
+.eula__img strong { display: block; background: url("../img/keyboard.png") no-repeat 0 0; width: 1220px; height: 567px; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; width: 100%; }
