@@ -272,20 +272,20 @@
 		padding: 62px 0 70px 
 	.news__in
 		+clr
-	.show_more
-		text-align: center
-		button
-			color: #096272 
-			background: transparent
-			opacity: .7
-			+os-l
-			font-size: 20px 
-			i
-				position: relative
-				top: 5px 
-				padding-right: 13px 
-			&:hover
-				opacity: 1
+.show_more
+	text-align: center
+	button
+		color: #096272 
+		background: transparent
+		opacity: .7
+		+os-l
+		font-size: 20px 
+		i
+			position: relative
+			top: 5px 
+			padding-right: 13px 
+		&:hover
+			opacity: 1
 .news__container
 	width: 82%
 	margin: 0 auto
@@ -293,25 +293,27 @@
 		margin: 0 -7% 0 -4% 
 		+clr 
 		padding-bottom: 85px 
-.news__item
+.post
 	width: 33%
+	height: 210px 
 	float: left
 	+box-sizing(border-box)
 	padding: 0 3% 
 	> a
+		display: block
 		color: #000 
 		&:hover
 			color: #6DA4B3 
-	.news__item_heading
+	.post__heading
 		margin-bottom: 10px 
-		.news__item_heading_text 
+		.post__heading_text 
 			+os-l
 			font-size: 28px 
 			margin-bottom: 5px 
 		time
 			+os-l
 			font-size: 15px 
-	.news__item_main
+	.post__main
 		+os
 		font-size: 16px 
 		opacity: .7

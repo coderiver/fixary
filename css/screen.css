@@ -219,22 +219,23 @@ i.icon-teamviewer { background: url('../img/icons-s659f67e492.png') 0 -419px no-
 .news .block_header { padding: 62px 0 70px; }
 .news .news__in { *zoom: 1; }
 .news .news__in:after { content: " "; display: table; clear: both; }
-.news .show_more { text-align: center; }
-.news .show_more button { color: #096272; background: transparent; opacity: 0.7; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 20px; }
-.news .show_more button i { position: relative; top: 5px; padding-right: 13px; }
-.news .show_more button:hover { opacity: 1; }
+
+.show_more { text-align: center; }
+.show_more button { color: #096272; background: transparent; opacity: 0.7; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 20px; }
+.show_more button i { position: relative; top: 5px; padding-right: 13px; }
+.show_more button:hover { opacity: 1; }
 
 .news__container { width: 82%; margin: 0 auto; }
 .news__container .news__container_wrap { margin: 0 -7% 0 -4%; *zoom: 1; padding-bottom: 85px; }
 .news__container .news__container_wrap:after { content: " "; display: table; clear: both; }
 
-.news__item { width: 33%; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 3%; }
-.news__item > a { color: black; }
-.news__item > a:hover { color: #6da4b3; }
-.news__item .news__item_heading { margin-bottom: 10px; }
-.news__item .news__item_heading .news__item_heading_text { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 28px; margin-bottom: 5px; }
-.news__item .news__item_heading time { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 15px; }
-.news__item .news__item_main { font-family: "Open Sans", Arial, sans-serif; font-size: 16px; opacity: 0.7; }
+.post { width: 33%; height: 210px; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 3%; }
+.post > a { display: block; color: black; }
+.post > a:hover { color: #6da4b3; }
+.post .post__heading { margin-bottom: 10px; }
+.post .post__heading .post__heading_text { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 28px; margin-bottom: 5px; }
+.post .post__heading time { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 15px; }
+.post .post__main { font-family: "Open Sans", Arial, sans-serif; font-size: 16px; opacity: 0.7; }
 
 .advantages .advantages__in { position: relative; padding-bottom: 280px; }
 .advantages .advantages__in:after { content: ""; display: block; background: url("../img/man.png") no-repeat 0 0; width: 590px; height: 246px; position: absolute; bottom: -29px; left: 55%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
@@ -313,3 +314,9 @@ i.icon-teamviewer { background: url('../img/icons-s659f67e492.png') 0 -419px no-
 .eula__img { position: relative; width: 102%; height: auto; left: -1%; margin-bottom: 30px; *zoom: 1; }
 .eula__img:after { content: " "; display: table; clear: both; }
 .eula__img strong { display: block; background: url("../img/keyboard.png") no-repeat 0 0; width: 1220px; height: 567px; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; width: 100%; }
+
+.blog { margin-top: 80px; }
+.blog .block_header { padding: 88px 0 80px; }
+.blog .post { margin-bottom: 55px; }
+.blog .news__container { padding-bottom: 120px; }
+.blog .news__container_wrap { padding-bottom: 21px; }
