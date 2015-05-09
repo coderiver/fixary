@@ -38,7 +38,7 @@
 			opacity: 1
 
 	.js-drop
-		box-sizing: border-box
+		+box-sizing(border-box)
 
 .dropdown
 	width: 370px 
@@ -50,15 +50,15 @@
 	background: url('../img/icons/drop_arr.png') no-repeat  95% 53%  
 
 .greet__form_email
-	box-sizing: border-box
+	+box-sizing(border-box)
 	width: 315px 
 	padding: 20px 15px 
 .greet__form_name
-	box-sizing: border-box
+	+box-sizing(border-box)
 	width: 235px 
 	padding: 20px 15px 
 .greet__submit 
-	box-sizing: border-box
+	+box-sizing(border-box)
 	width: 115px 
 	padding: 0px 15px 
 	height: 55px 
@@ -111,14 +111,16 @@
 	padding: 63px 0 133px
 	width: 75% 
 	+clr
+
 .services__item
-	box-sizing: border-box
+	+box-sizing(border-box)
 	padding: 5% 5% 5% 7%
 	width: 50% 
-	height: 255px 
-	float: left
+	// height: 255px 
+	// float: left
 	vertical-align: top
 	cursor: pointer
+	// display: table-cell
 	&:hover
 		+box-shadow(0 0 0 1px rgba(black, .6) inset)
 		opacity: .7 
@@ -317,7 +319,7 @@
 			+png(man)
 			position: absolute 
 			bottom: -29px 
-			left: 50%
+			left: 55%
 			+translate(-50%,0) 
 	.block_header
 		padding: 85px 0 95px
@@ -345,12 +347,150 @@
 	margin: 0 auto
 	+clr
 
+//----- work
+.work
+	background: url('../img/map.png') no-repeat center 45px
+	overflow: hidden 
+	.block_header
+		padding: 118px 0 0
+		margin-left: -3% 
+	.footer
+		margin-top: 708px 
+.work__content
+	position: relative
+.location
+	position: absolute
+	max-width: 420px 
+	height: auto
+	display: block
+	+clr
+	.location__dot
+		// display: block
+		position: absolute
+		bottom: -20px
+		left: 50%
+		+translate(-50%,0) 
+		width: 8px  
+		height: 8px
+		+border-radius(50%)
+		+box-shadow(0 0 0 5px rgba(#FFF, .2))
+		// border: 5px solid rgba(#FFF, .1)
+		cursor: pointer
+		background-color: rgba(#FFF, .9)
+		// opacity: .3
+		&:hover
+			width: 8px  
+			height: 8px
+			background-color: rgba(#FFF, 1)
+			// padding: 1px
+			bottom: -22px 
+			// opacity: 1 
+			// border-size: 10px
+
+.location--1
+	top: 50px 
+	left: 67px
+.location--2
+	top: 100px
+	left: -22px
+.location--3
+	top: 137px
+	left: 104px
+.location--4
+	position: absolute
+	top: 126px
+	left: 170px
+.location--5
+	position: absolute
+	top: 367px
+	left: 270px
+.location--6
+	position: absolute
+	top: 100px
+	left: 460px
+.location--7
+	position: absolute
+	top: 25px
+	left: 638px
+.location--8
+	position: absolute
+	top: 226px
+	left: 639px
+.location--9
+	position: absolute
+	top: 238px
+	left: 751px
+.location--10
+	position: absolute
+	top: 187px
+	left: 842px
+.location--11
+	position: absolute
+	top: 163px
+	right: -2px
+.location--12
+	position: absolute
+	top: 441px
+	right: -15px 
+
+.location__tooltip
+	// display: none
+	// opacity: 1 
+	visibility: hidden 
+	position: relative
+	max-width: inherit
+	top: -5px 
+						
+	&.is-active
+		visibility: visible 
+	&:after
+		content: ''
+		display: block
+		+arr(10, 5, rgba(#B7CADB, .45), b)
+		position: absolute
+		bottom: -5px 
+		left: 50%
+		+translate(-50%,0) 
+	.icon-close
+		position: absolute
+		top: 7px
+		right: 7px
+		opacity: .5
+		cursor: pointer
+		&:hover 
+			opacity: 1 
+.comment
+	max-width: 420px
+	max-width: inherit
+	background-color: rgba(#B7CADB, .45)
+	+border-radius(3px)
+	+box-sizing(border-box)
+	padding: 4% 4.5% 5.3%
+	color: #FFF 
+	.author__data
+		font-size: 22px 
+	.author__name
+		+ps-b
+	.author__address
+		display: inline
+		+os-l
+		font-style: normal
+		font-size: 20px  
+	.comment__text
+		+ps
+		font-size: 13px 
+		padding-top: 5px
+		letter-spacing: 0.01em  
+	.author__photo
+		display: table-cell
+		padding: 6px 5% 0 0 
+		img
+			width: 77px
+			height: 77px
+			+border-radius(77px)
+			overflow: hidden  
+	.comment__info
+		display: table-cell
+		vertical-align: top
 		
 
-
-
-
-			
-
-			
-		

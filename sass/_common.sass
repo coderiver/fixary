@@ -1,4 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700")
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700")
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 //mixin
 =os
 	font-family: 'Open Sans', Arial, sans-serif
@@ -8,6 +10,12 @@
 =os-sb
 	font-family: 'Open Sans', Arial, sans-serif
 	font-weight: 600 
+=ps
+	font-family: 'PT Sans', Arial, sans-serif
+=ps-b
+	font-family: 'PT Sans', Arial, sans-serif
+	font-weight: 700 
+
 body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
@@ -38,17 +46,12 @@ i.icon-virus
 	// width: 83px
 	// height: 83px 
 	+s(icon-virus)
-	
-	
-
 i.icon-comp
 	// background: url(../img/icons/icon-comp.svg) no-repeat
 	// +background-size(contain)
 	// width: 83px
 	// height: 83px
 	+s(icon-comp)
-	 
-
 i.icon-tuneup
 	// background: url(../img/icons/icon-tuneup.svg) no-repeat
 	// +background-size(contain)
@@ -71,9 +74,17 @@ i.icon-email
 	+s(icon-email)
 i.icon-show
 	+s(icon-show)
-
+i.icon-close
+	+s(icon-close)
 // common blocks  
 
+.table
+	display: table
+.row
+	display: table-row
+.tc
+	display: table-cell
+	
 .header
 	width: 100% 
 	a
@@ -145,7 +156,8 @@ i.icon-show
 	font-size: 52px 
 	text-align: center
 	letter-spacing: 1px  
-	
+.block_header--white
+	color: #FFF 
 .main
 	width: 84% 
 	max-width: 1200px 
@@ -155,3 +167,67 @@ i.icon-show
 	.block_header
 		color: #000 
 
+.footer
+	max-width: 645px 
+	margin: 0 auto 
+	margin-top: 700px 
+.footer__contacts
+	width: inherit 
+	+clr
+	a
+		color: #FFF
+		+os-l
+		font-size: 32px
+		letter-spacing: 1px  
+	.is-left
+		float: left
+	.is-right
+		float: right
+.footer__social
+	color: #FFF 
+	width: inherit 
+	font-size: 0
+	+border-radius(3px)
+	margin-top: 30px 
+	overflow: hidden 
+	li
+		display: inline-block
+		width: 20%
+		+box-sizing(border-box)
+		a
+			width: 99% 
+			display: block
+			padding: 15px 0 15px 18% 
+			background-color: rgba(#FFF, .1) 
+			color: #FFF 
+			+box-sizing(border-box)
+			+transition(.2s)
+			&:hover
+				background-color: rgba(#c7f8ff, .3) 
+		&:last-child
+			margin-right: 0
+	.fa
+		font-size: 26px 
+		vertical-align: bottom
+		padding-right: 16% 
+	span
+		font-size: 19px 
+		opacity: .6
+		+os-l
+.footer__link
+	text-align: center
+	margin-top: 50px
+	li
+		display: inline-block
+		text-align: center
+		a
+			color: #FFF
+			padding: 0 17px
+			display: block
+			letter-spacing: 1px  
+			+os-l
+			font-size: 16px 
+			opacity: .7
+			transition: .1s
+			&:hover
+				opacity: 1
