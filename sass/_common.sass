@@ -117,18 +117,23 @@ i.icon-back
 		color: #FFF 
 	.header__in
 		width: 95%
+		max-width: 1360px 
 		margin: 0 auto  
 		+clr
 .header__nav
 	float: left
+	width: auto
 	ul
 		+clr
+		width: 100% 
 		margin-left: 28px 
+		
 	li
 		float: left
+		padding: 0 1%
 		a
 			display: block
-			padding: 40px 16px 0
+			padding: 40px 0 0
 			font-size: 20px 
 			+os-l
 			opacity: .5
@@ -141,7 +146,7 @@ i.icon-back
 				top: 1px
 				left: 50%
 				+translate(-50%,0) 
-				width: 80%
+				width: 103%
 				border-bottom: 3px solid #fff 
 			&:hover
 				opacity: 1 
@@ -149,25 +154,30 @@ i.icon-back
 					display: block			
 		
 .header__contact
+	display: table
 	float: right
-	width: 30% 
-	+clr
+	// display: inline-block
+	width: auto
 	text-align: right
-	p
-		display: inline-block
+	+clr
+	li
 		padding: 40px 0 0 15%
-		text-align: right
+		display: table-cell
+		// text-align: right
+		// float: left
+		
 		&:first-child
 			padding-left: 0 
 		a
 			font-size: 22px 
 			opacity: .5
 			+os-l
+			white-space: nowrap
 			&:hover
 				opacity: 1
 				transition: .2s 
 
-	p i
+	li i
 		position: relative
 		left: -14px 
 		
