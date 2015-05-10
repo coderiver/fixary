@@ -368,26 +368,41 @@
 
 //----- work
 .work
-	background: url('../img/map.png') no-repeat center 45px
+	margin: 0 auto 
 	overflow: hidden 
+	max-width: 1440px 
+	background: url('../img/map.png') no-repeat center
+	background-position: center 45px
+	+clr
+	.work__in
+		width: 100% 
+		margin: 0 auto 
+		overflow: hidden
+		position: relative
 	.block_header
 		padding: 118px 0 0
 		margin-left: -3% 
+		position: relative
+		z-index: 2 
 	.footer
 		margin-top: 708px 
 .work__content
-	position: relative
-.location
 	position: absolute
+	width: 1440px
+	left: 50%
+	+translate(-50%,0) 
+	+clr
+.location
+	position: relative
 	max-width: 420px 
 	height: auto
 	display: block
 	+clr
 	.location__dot
 		position: absolute
-		bottom: -20px
-		left: 50%
-		+translate(-50%,0) 
+		top: 11px
+		// left: 0
+		+translate(-50%,0)
 		width: 8px  
 		height: 8px
 		+border-radius(50%)
@@ -395,10 +410,13 @@
 		// border: 5px solid rgba(#FFF, .1)
 		cursor: pointer
 		background-color: rgba(#FFF, .9)
+		+transition(.2s ease-in-out)
 		// opacity: .3
 		&:hover
 			width: 10px  
 			height: 10px
+			top: 10px 
+			+box-shadow(0 0 0 7px rgba(#FFF, .2))
 			// background-color: rgba(#FFF, 1)
 			// padding: 1px
 			// bottom: -22px 
@@ -406,61 +424,52 @@
 			// border-size: 10px
 
 .location--1
-	top: 50px 
-	left: 67px
+	top: 248px 
+	left: 274px
 .location--2
-	top: 100px
-	left: -22px
+	top: 301px
+	left: 185px
 .location--3
-	top: 137px
-	left: 104px
+	top: 326px
+	left: 377px
 .location--4
-	position: absolute
-	top: 126px
-	left: 170px
+	top: 337px
+	left: 312px
 .location--5
-	position: absolute
-	top: 367px
-	left: 270px
+	top: 566px
+	left: 478px
 .location--6
-	position: absolute
-	top: 100px
-	left: 460px
+	top: 300px
+	left: 667px
 .location--7
-	position: absolute
-	top: 25px
-	left: 638px
-.location--8
-	position: absolute
 	top: 226px
-	left: 639px
+	left: 845px
+.location--8
+	top: 428px
+	left: 847px
 .location--9
-	position: absolute
-	top: 238px
-	left: 751px
+	top: 440px
+	left: 958px
 .location--10
-	position: absolute
-	top: 187px
-	left: 842px
+	top: 388px
+	left: 1048px
 .location--11
-	position: absolute
-	top: 163px
-	right: -2px
+	top: 363px
+	left: 1213px
 .location--12
-	position: absolute
-	top: 441px
-	right: -15px 
+	top: 642px
+	left: 1225px 
 
 .location__tooltip
-	// display: none
-	// opacity: 1 
-	visibility: hidden 
-	position: relative
+	position: absolute
+	display: none
 	max-width: inherit
 	top: -5px 
+	z-index: 3 
+	+translate(-50%, -100%)
 						
 	&.is-active
-		visibility: visible 
+		display: block 
 	&:after
 		content: ''
 		display: block

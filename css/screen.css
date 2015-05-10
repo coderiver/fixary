@@ -253,43 +253,46 @@ i.icon-back { background: url('../img/icons-s06c1f116e7.png') 0 -51px no-repeat;
 .advantages__content { width: 75%; margin: 0 auto; *zoom: 1; }
 .advantages__content:after { content: " "; display: table; clear: both; }
 
-.work { background: url("../img/map.png") no-repeat center 45px; overflow: hidden; }
-.work .block_header { padding: 118px 0 0; margin-left: -3%; }
+.work { margin: 0 auto; overflow: hidden; max-width: 1440px; background: url("../img/map.png") no-repeat center; background-position: center 45px; *zoom: 1; }
+.work:after { content: " "; display: table; clear: both; }
+.work .work__in { width: 100%; margin: 0 auto; overflow: hidden; position: relative; }
+.work .block_header { padding: 118px 0 0; margin-left: -3%; position: relative; z-index: 2; }
 .work .footer { margin-top: 708px; }
 
-.work__content { position: relative; }
+.work__content { position: absolute; width: 1440px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); *zoom: 1; }
+.work__content:after { content: " "; display: table; clear: both; }
 
-.location { position: absolute; max-width: 420px; height: auto; display: block; *zoom: 1; }
+.location { position: relative; max-width: 420px; height: auto; display: block; *zoom: 1; }
 .location:after { content: " "; display: table; clear: both; }
-.location .location__dot { position: absolute; bottom: -20px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); width: 8px; height: 8px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2); -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2); box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2); cursor: pointer; background-color: rgba(255, 255, 255, 0.9); }
-.location .location__dot:hover { width: 10px; height: 10px; }
+.location .location__dot { position: absolute; top: 11px; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); width: 8px; height: 8px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2); -webkit-box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2); box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2); cursor: pointer; background-color: rgba(255, 255, 255, 0.9); -moz-transition: 0.2s ease-in-out; -o-transition: 0.2s ease-in-out; -webkit-transition: 0.2s ease-in-out; transition: 0.2s ease-in-out; }
+.location .location__dot:hover { width: 10px; height: 10px; top: 10px; -moz-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.2); -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.2); box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.2); }
 
-.location--1 { top: 50px; left: 67px; }
+.location--1 { top: 248px; left: 274px; }
 
-.location--2 { top: 100px; left: -22px; }
+.location--2 { top: 301px; left: 185px; }
 
-.location--3 { top: 137px; left: 104px; }
+.location--3 { top: 326px; left: 377px; }
 
-.location--4 { position: absolute; top: 126px; left: 170px; }
+.location--4 { top: 337px; left: 312px; }
 
-.location--5 { position: absolute; top: 367px; left: 270px; }
+.location--5 { top: 566px; left: 478px; }
 
-.location--6 { position: absolute; top: 100px; left: 460px; }
+.location--6 { top: 300px; left: 667px; }
 
-.location--7 { position: absolute; top: 25px; left: 638px; }
+.location--7 { top: 226px; left: 845px; }
 
-.location--8 { position: absolute; top: 226px; left: 639px; }
+.location--8 { top: 428px; left: 847px; }
 
-.location--9 { position: absolute; top: 238px; left: 751px; }
+.location--9 { top: 440px; left: 958px; }
 
-.location--10 { position: absolute; top: 187px; left: 842px; }
+.location--10 { top: 388px; left: 1048px; }
 
-.location--11 { position: absolute; top: 163px; right: -2px; }
+.location--11 { top: 363px; left: 1213px; }
 
-.location--12 { position: absolute; top: 441px; right: -15px; }
+.location--12 { top: 642px; left: 1225px; }
 
-.location__tooltip { visibility: hidden; position: relative; max-width: inherit; top: -5px; }
-.location__tooltip.is-active { visibility: visible; }
+.location__tooltip { position: absolute; display: none; max-width: inherit; top: -5px; z-index: 3; -moz-transform: translate(-50%, -100%); -ms-transform: translate(-50%, -100%); -webkit-transform: translate(-50%, -100%); transform: translate(-50%, -100%); }
+.location__tooltip.is-active { display: block; }
 .location__tooltip:after { content: ""; display: block; width: 0px; height: 0px; border-style: solid; border-width: 5px 5px 0 5px; border-color: rgba(183, 202, 219, 0.45) transparent transparent transparent; position: absolute; bottom: -5px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 .location__tooltip .icon-close { position: absolute; top: 7px; right: 7px; opacity: 0.5; cursor: pointer; }
 .location__tooltip .icon-close:hover { opacity: 1; }
