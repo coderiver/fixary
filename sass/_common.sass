@@ -20,7 +20,7 @@
 	font-weight: 700 
 	
 =header_br
-	+r(1165)
+	+r(1255)
 		@content
 =tablet
 	+r(1024)
@@ -121,7 +121,16 @@ i.icon-back
 	display: table-cell
 	
 .header
-	width: 100% 
+	position: fixed
+	top: 0
+	left: 0 
+	right: 0   
+	z-index: 1000
+	padding-bottom: 16px 
+	+transition(all .2s linear)
+	&.is-atbottom
+		background: rgba(#073141,.7) 
+		top: -18px 
 	a
 		color: #FFF 
 	.header__in
@@ -149,17 +158,16 @@ i.icon-back
 		
 .header__nav
 	float: left
-	width: auto
-	ul.nav__link
+	ul.nav__link 
 		+clr
 		width: 100% 
 		margin-left: 28px 
 		li
 			float: left
-			padding: 0 1%
+			margin-right: 10px 
 			a
 				display: block
-				padding: 40px 0 0
+				padding: 40px 10px 0 10px
 				font-size: 20px 
 				+os-l
 				opacity: .5
@@ -178,25 +186,7 @@ i.icon-back
 					opacity: 1 
 					&:after
 						display: block
-	.nav__social
-		width: 100%
-		text-align: center 
-		position: absolute
-		bottom: 0 
-		display: none	
-		margin: 0 auto
-		left: 50%
-		+translate(-50%,0)   
-		ul.nav__social_link
-			li
-				display: inline-block
-				a
-					display: block
-					font-size: 18px
-					opacity: .7
-					padding: 0 10px 
-					&:hover
-						opacity: 1 		
+	
 	+header_br
 		height: 100vh 
 		background-color: #061827
@@ -225,22 +215,24 @@ i.icon-back
 						left: 0 
 						top: 50% 
 						+translate(0,-50%) 
-		.nav__social
-			display: block
+	.nav__social
+		display: none
 			
 		
 .header__contact
-	display: table
-	float: right
+	position: absolute
+	right: 0
+	top: 0  
 	// display: inline-block
-	width: auto
 	text-align: right
-	+clr
+	white-space: nowrap
 	li
-		padding: 40px 0 0 15%
-		display: table-cell
+		padding: 38px 0 0 0
 		// text-align: right
 		// float: left
+		display: inline-block
+		vertical-align: top
+		margin-right: 40px 
 		
 		&:first-child
 			padding-left: 0 
@@ -255,6 +247,18 @@ i.icon-back
 
 	li i
 		padding-right: 14px 
+		position: relative
+		top: 2px
+	.profile
+		+r(600)
+			display: none
+	.call
+
+		+r(488)
+			i
+				display: none
+			a
+				font-size: 14px 
 		
 .header__logo
 	float: left
@@ -281,6 +285,9 @@ i.icon-back
 		color: #000 
 	+tablet
 		width: 90% 
+	+r(600)
+		width: auto
+		border-radius: 0
 
 .footer
 	max-width: 645px 
@@ -355,7 +362,6 @@ i.icon-back
 				padding-right: 3% 
 .out
 	+transition(.3s)
-	+gpu
 	
 .trans
 	+translate(220px,0)

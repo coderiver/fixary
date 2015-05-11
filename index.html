@@ -28,15 +28,6 @@
 				<li><a href="#">Contacts</a></li>
 				<li><a href="#">Blog</a></li>
 			</ul>
-			<div class="nav__social">
-				<ul class="nav__social_link">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-					<li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
-				</ul>
-			</div>
 		</div></nav>
 		<div class="header__contact">
 			<ul>
@@ -54,7 +45,7 @@
 				<p>Between your computer’s problem and its resolution is where Fixary lies</p>
 			</div>
 			<form action="" class="greet__form">
-					<select name="" id="" class="dropdown greet__form_item">
+					<!-- <select name="" id="" class="dropdown greet__form_item">
 						<option selected disabled>What can we help with?</option>
 						<option>Virus and Spyware Removal</option>
 						<option>Computer Troubleshooting</option>
@@ -63,8 +54,8 @@
 						<option>ID Protection Settings</option>
 						<option>Email Set Up</option>
 						<option>Write Your Problem ...</option>
-					</select>
-				<!-- <div class="dropdown greet__form_item">
+					</select> -->
+				<div class="dropdown greet__form_item">
 					<input type="button" class="js-drop" value="What can we help with?">
 					<ul class="dropdown__menu">
 						<li class="">Virus and Spyware Removal</li>
@@ -75,7 +66,7 @@
 						<li class="">Email Set Up</li>
 						<li class="">Write Your Problem ...</li>
 					</ul>
-				</div> -->
+				</div>
 				<input type="email" required name="email" class="greet__form_item greet__form_email" placeholder="Your email">
 				<input type="text" required name="name" class="greet__form_item greet__form_name" placeholder="Your name">
 				<input type="submit" class="btn greet__submit" value="Send">
@@ -85,9 +76,12 @@
 
 	<div class="main">
 		<!-- BEGIN about  -->
-		<div class="about"><div class="about__in">
+		<div class="about js-view"><div class="about__in">
 			<h2 class="block_header">About</h2>
 			<div class="about__content">
+				<div class="about__img">
+					<img src="img/comps.png" alt="">
+				</div>
 				<div class="about__text">
 					<p>No matter where in the world you live, no matter when you want to contact us, we can bring a certified PC or Mac technician to you in seconds via a remote connection.</p>
 					<p>Mission statement To build long term relationships with our customers and clients and provide exceptional customer services by pursuing business through intellectual innovation and advanced technology. Core values We believe in treating our customers with respect and faith We grow through creativity, invention and innovation. Integrate honesty, integrity and business ethics into all aspects of our business functioning. You may be wondering why our logo.</p>
@@ -101,7 +95,7 @@
 		<!-- BEGIN serivces  -->
 		<div class="services"><div class="services__in">
 			<h2 class="block_header">Services</h2>
-			<div class="services__content table">
+			<div class="services__content table js-view">
 			<div class="row">
 				<div class="services__item tc">
 					<h3 class="services__item_header"><i class="icon-virus"></i><span>Virus and <br> spyware removal</span></h3>
@@ -138,7 +132,7 @@
 		<!-- BEGIN pricing  -->
 		<div class="pricing"><div class="pricing__in">
 			<h2 class="block_header">Pricing plans</h2>
-			<div class="pricing__content">
+			<div class="pricing__content js-view">
 				<div class="table table--gray is-left">
 					<div class="table__header">
 						<h4 class="table__header_text">Essential</h4>
@@ -222,7 +216,7 @@
 		<!-- BEGIN news  -->
 		<div class="news"><div class="news__in">
 			<h2 class="block_header">News</h2>
-			<div class="news__container"><div class="news__container_wrap">
+			<div class="news__container js-view"><div class="news__container_wrap">
 				<article class="post">
 					<a href="#">
 						<div class="post__heading">
