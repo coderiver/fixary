@@ -3,6 +3,11 @@
 	padding: 215px 0 320px
 	.greet__in
 		text-align: center
+		width: 85%
+		max-width: 1200px  
+		margin: 0 auto 
+		+tablet
+			width: 90% 
 .greet__text
 	color: #FFF 
 	h1
@@ -36,13 +41,15 @@
 			opacity: .6
 		&:focus, &.filled
 			opacity: 1
+	.greet__form_item
 
 	.js-drop
 		+box-sizing(border-box)
 
 .dropdown
-	max-width: 370px 
-	width: 26% 
+	// max-width: 370px 
+	width: 26%
+	width: 31%  
 	border: 0px
 	outline: none
 	+appearance(none)
@@ -54,33 +61,44 @@
 		opacity: .6
 		&:hover
 			opacity: .8
+	+tablet
+		width: 32% 
 
 		
 
 
 .greet__form_email
 	+box-sizing(border-box)
-	max-width: 315px
-	width: 22%  
+	// max-width: 315px
+	width: 22% 
+	width: 26%  
 	padding: 20px 15px 
+	+tablet
+		width: 32% 
 .greet__form_name
 	+box-sizing(border-box)
-	max-width: 235px 
+	// max-width: 235px 
 	width: 16% 
+	width: 20% 
 	padding: 20px 15px 
+	+tablet
+		width: 22% 
 .greet__submit 
 	+box-sizing(border-box)
-	max-width: 115px 
-	width: 8% 
+	// max-width: 115px 
+	width: 8%
+	width: 10%  
 	padding: 0px 15px 
 	height: 55px 
-	margin: 0 3px
+	margin: 0 3px 
 	opacity: 1 
 	background-color: #F7B30E
 	color: #fff
 	+border-radius(3px)  
 	+os-l
 	font-size: 24px 
+	+tablet
+		width: 11% 
 .dropdown__menu
 	display: none
 
@@ -125,6 +143,8 @@
 	padding: 63px 0 133px
 	width: 75% 
 	+clr
+	+tablet
+		width: 85% 
 
 .services__item
 	+box-sizing(border-box)
@@ -155,6 +175,16 @@
 		+os
 		font-size: 16px 
 		margin-top: 15px 
+	+tablet
+		display: block
+		width: 100% 
+		.services__item_header
+			text-align: center
+			i
+				float: none
+				display: block
+				margin: 0 auto
+				padding-right: 0 
 		
 
 //----- price

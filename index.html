@@ -12,9 +12,14 @@
 <div class="out">
 	<!-- BEGIN header  -->
 	<header class="header"><div class="header__in">
+		<div class="humb js-nav-toggle">
+			<div></div>		
+			<div></div>		
+			<div></div>		
+		</div>
 		<div class="header__logo logo"></div>
-		<nav class="header__nav nav">
-			<ul>
+		<nav class="header__nav nav"><div class="header__nav_in">
+			<ul class="nav__link">
 				<li><a href="#">About</a></li>
 				<li><a href="#">Services</a></li>
 				<li><a href="#">Prices</a></li>
@@ -23,7 +28,16 @@
 				<li><a href="#">Contacts</a></li>
 				<li><a href="#">Blog</a></li>
 			</ul>
-		</nav>
+			<div class="nav__social">
+				<ul class="nav__social_link">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+					<li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+				</ul>
+			</div>
+		</div></nav>
 		<div class="header__contact">
 			<ul>
 				<li class="call"><a href="tel:+18884241328"><i class="icon-phone"></i>+1 888 424 13 28</a></li>
@@ -532,12 +546,12 @@
 		</div></footer>
 	</div></div>
 	<!-- END work -->
-	<div id="bg_video" class="is-overlay">
-		<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
-			<source src="video/Fixary_Background.mp4"></source>
-			<!-- <source src="book.webm" type="video/webm"></source> -->
-		</video>
-	</div>
+</div>
+<div id="bg_video" class="is-overlay">
+	<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+		<source src="video/Fixary_Background.mp4"></source>
+		<!-- <source src="book.webm" type="video/webm"></source> -->
+	</video>
 </div>
 <!-- END out-->
 <!-- load scripts -->

@@ -8,5 +8,8 @@ head.ready(function() {
 			$this.removeClass('filled');
 		}
 	});
+	$('.js-nav-toggle').click(function(){
+			$('.out').toggleClass('trans');
+	});
 
 });
