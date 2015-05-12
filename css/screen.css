@@ -146,8 +146,10 @@ i.icon-back { background: url('../img/icons-s06c1f116e7.png') 0 -51px no-repeat;
 
 .footer__link { margin-top: 50px; padding-bottom: 45px; }
 .footer__link ul { text-align: center; }
-.footer__link li { display: inline-block; text-align: center; }
-.footer__link li a { color: #FFF; padding: 0 20px; display: block; letter-spacing: 1px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 16px; opacity: 0.7; transition: 0.1s; white-space: nowrap; }
+.footer__link li { display: inline-block; text-align: center; margin: 0 20px; }
+.footer__link li:last-child a { color: #748c90; }
+.footer__link li span { display: inline-block; vertical-align: middle; font-size: 16px; margin-right: 4px; color: #748c90; opacity: 0.7; }
+.footer__link li a { color: #FFF; display: inline-block; vertical-align: middle; letter-spacing: 1px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 16px; opacity: 0.7; transition: 0.1s; white-space: nowrap; }
 .footer__link li a:hover { opacity: 1; }
 .footer__link li a i { vertical-align: bottom; padding-right: 3%; }
 
