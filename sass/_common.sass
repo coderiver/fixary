@@ -127,13 +127,19 @@ i.icon-back
 	left: 0 
 	width: 100% 
 	z-index: 1000
+	padding-top: 18px
 	padding-bottom: 16px 
-	+transition(all .2s linear)
+	+transition(all .3s)
 	.is-menu & 
-		left: 220px 
+		//left: 220px 
+		+transform(translateX(220px))
 	&.is-atbottom
 		background: rgba(#073141,.7) 
-		top: -18px 
+		//top: -18px 
+		padding-top: 0
+		.header__contact
+			li
+				padding: 20px 0 0 0
 	a
 		color: #FFF 
 	.header__in
@@ -145,7 +151,8 @@ i.icon-back
 	.humb
 		width: 30px 
 		display: none
-		margin-top: 45px
+		//margin-top: 45px
+		margin-top: 27px
 		cursor: pointer
 		float: left
 		margin-right: 20px  
@@ -170,7 +177,8 @@ i.icon-back
 			margin-right: 10px 
 			a
 				display: block
-				padding: 40px 10px 0 10px
+				//padding: 40px 10px 0 10px
+				padding: 22px 10px 0 10px 
 				font-size: 20px 
 				+os-l
 				opacity: .5
@@ -196,9 +204,15 @@ i.icon-back
 		+box-sizing(border-box)
 		padding: 32px 0
 		position: fixed
-		left: -220px
+		left: 0
+		top: 0
+		//left: -220px
+		+transform(translateX(-220px))
+		+tr(transform 300ms)
 		.is-menu &
-			left: 0 
+			//left: 0
+			//+transform(translateX(0))
+			//top: 0 
 		.header__nav_in
 			height: 100% 
 			position: relative
@@ -231,13 +245,13 @@ i.icon-back
 	text-align: right
 	white-space: nowrap
 	li
-		padding: 38px 0 0 0
+		padding: 38px 0 0 0 
 		// text-align: right
 		// float: left
 		display: inline-block
 		vertical-align: top
 		margin-right: 40px 
-		
+		+tr(padding 300ms)
 		&:first-child
 			padding-left: 0 
 		a
@@ -266,7 +280,8 @@ i.icon-back
 		
 .header__logo
 	float: left
-	margin-top: 30px 
+	//margin-top: 30px
+	margin-top: 12px 
 .logo
 	+s(logo)
 .logo--big
@@ -367,6 +382,6 @@ i.icon-back
 				
 
 .out
-	+transition(.3s)
+	+tr(transform .3s)
 .is-menu .out
 	+translate(220px,0)
