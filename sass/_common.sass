@@ -60,6 +60,9 @@ input[type="button"], input[type="submit"]
 		height: auto   
 i[class^="icon-"]
 	display: inline-block
+	img
+		width: 100%
+		height: 100%  
 i.icon-phone
 	+s(icon-phone)
 i.icon-user
@@ -69,43 +72,45 @@ i.icon-drop
 i.icon-setup
 	// background: url(../img/icons/icon-setup.svg) no-repeat
 	// +background-size(contain)
-	// width: 83px
-	// height: 83px  
-	+s(icon-setup)
+	width: 62px
+	height: 62px  
+	//+s(icon-setup)
 i.icon-virus
-	// background: url(../img/icons/icon-virus.svg) no-repeat
-	// +background-size(contain)
-	// width: 83px
-	// height: 83px 
-	+s(icon-virus)
+	//background: url(../img/icons/icon-virus.svg) no-repeat
+	//+background-size(contain)
+	width: 74px
+	height: 73px 
+	//+s(icon-virus)
 i.icon-comp
 	// background: url(../img/icons/icon-comp.svg) no-repeat
 	// +background-size(contain)
-	// width: 83px
-	// height: 83px
-	+s(icon-comp)
+	width: 76px
+	height: 58px
+	//+s(icon-comp)
 i.icon-tuneup
 	// background: url(../img/icons/icon-tuneup.svg) no-repeat
 	// +background-size(contain)
-	// width: 83px
-	// height: 83px 
-	+s(icon-tuneup)
+	width: 63px
+	height: 57px 
+	//+s(icon-tuneup)
 
 i.icon-protect
 	// background: url(../img/icons/icon-protect.svg) no-repeat
 	// +background-size(contain)
-	// width: 83px
-	// height: 83px 
-	+s(icon-protect)
+	width: 54px
+	height: 62px 
+	//+s(icon-protect)
 
 i.icon-email
 	// background: url(../img/icons/icon-email.svg) no-repeat
 	// +background-size(contain)
-	// width: 83px
-	// height: 83px 
-	+s(icon-email)
+	width: 69px
+	height: 64px 
+	//+s(icon-email)
 i.icon-show
-	+s(icon-show)
+	width: 22px
+	height: 20px 
+	//+s(icon-show)
 i.icon-close
 	+s(icon-close)
 i.icon-teamviewer
@@ -131,11 +136,9 @@ i.icon-back
 	padding-bottom: 16px 
 	+transition(all .3s)
 	.is-menu & 
-		//left: 220px 
 		+transform(translateX(220px))
 	&.is-atbottom
 		background: rgba(#073141,.7) 
-		//top: -18px 
 		padding-top: 0
 		.header__contact
 			li
@@ -144,14 +147,12 @@ i.icon-back
 		color: #FFF 
 	.header__in
 		width: 95%
-		max-width: 1360px 
 		margin: 0 auto  
 		+clr
 
 	.humb
 		width: 30px 
 		display: none
-		//margin-top: 45px
 		margin-top: 27px
 		cursor: pointer
 		float: left
@@ -174,10 +175,11 @@ i.icon-back
 		margin-left: 28px 
 		li
 			float: left
-			margin-right: 10px 
+			margin-right: 15px
+			+r(1366)
+				margin-right: 10px
 			a
 				display: block
-				//padding: 40px 10px 0 10px
 				padding: 22px 10px 0 10px 
 				font-size: 20px 
 				+os-l
@@ -188,11 +190,15 @@ i.icon-back
 					content: ''
 					display: none
 					position: absolute 
-					top: 1px
+					top: -18px
 					left: 50%
 					+translate(-50%,0) 
 					width: 103%
-					border-bottom: 3px solid #fff 
+					border-bottom: 2px solid #fff
+					+tr(top 200ms)
+				.is-atbottom &
+					&:after
+						top: 0	 
 				&:hover, &.is-active
 					opacity: 1 
 					&:after
@@ -206,13 +212,9 @@ i.icon-back
 		position: fixed
 		left: 0
 		top: 0
-		//left: -220px
 		+transform(translateX(-220px))
 		+tr(transform 300ms)
 		.is-menu &
-			//left: 0
-			//+transform(translateX(0))
-			//top: 0 
 		.header__nav_in
 			height: 100% 
 			position: relative
@@ -241,13 +243,10 @@ i.icon-back
 	position: absolute
 	right: 0
 	top: 0  
-	// display: inline-block
 	text-align: right
 	white-space: nowrap
 	li
 		padding: 38px 0 0 0 
-		// text-align: right
-		// float: left
 		display: inline-block
 		vertical-align: top
 		margin-right: 40px 

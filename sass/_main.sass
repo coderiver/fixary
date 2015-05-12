@@ -7,14 +7,14 @@
 	margin-bottom: -30px
 	+r(767)
 		height: auto
-		padding-bottom: 30px  
+		padding-bottom: 30px
+		margin-bottom: 0  
 	.greet__in
 		text-align: center
 		width: 85%
 		max-width: 1200px  
 		margin: 0 auto 
 		position: absolute
-		//left: 7%
 		left: 50%
 		+transform(translateX(-50%))
 		top: 50%
@@ -57,9 +57,11 @@
 		+placeholder-color(#001C33)
 		&:hover
 			background-color: rgba(#fff,.6)
-		&:focus, &.filled
+		&:focus
 			opacity: 1
 			background-color: #fff
+		&.filled
+			opacity: 1	
 		+r(1024)
 			font-size: 18px	
 	.dropdown
@@ -68,7 +70,10 @@
 			+placeholder-color(#001C33)
 			color: #001C33
 			width: 100% 
-			margin: 0 
+			margin: 0
+			background: transparent
+			&:hover
+				background: transparent 
 			 
 	.greet__form_item
 		+r(800)
@@ -78,7 +83,6 @@
 		+box-sizing(border-box)
 
 .dropdown
-	// max-width: 370px 
 	width: 26%
 	width: 31%  
 	border: 0px
@@ -86,9 +90,20 @@
 	+appearance(none)
 	appearance: none
 	cursor: pointer
-	background: url('../img/icons/drop_arr.png') no-repeat  95% 53%  
+	.dropdown__arr
+		position: absolute
+		top: 50%
+		right: 19px
+		width: 21px
+		height: 21px
+		+transform(translateY(-50%))
+		img
+			width: 100%
+			height: 100%
 	&.is-active
-		background: #fff 
+		background: #fff
+		&:hover
+			background: #fff  
 	option
 		background-color: #FFF 
 		opacity: .6
@@ -105,7 +120,6 @@
 
 .greet__form_email
 	+box-sizing(border-box)
-	// max-width: 315px
 	width: 22% 
 	width: 26%  
 	padding: 20px 15px 
@@ -113,15 +127,13 @@
 		width: 32% 
 .greet__form_name
 	+box-sizing(border-box)
-	// max-width: 235px 
 	width: 16% 
 	width: 20% 
 	padding: 20px 15px 
 	+tablet
 		width: 22% 
 .greet__submit 
-	+box-sizing(border-box)
-	// max-width: 115px 
+	+box
 	width: 8%
 	width: 10%  
 	padding: 0px 15px 
@@ -130,9 +142,14 @@
 	opacity: 1 
 	background-color: #F7B30E
 	color: #fff
-	+border-radius(3px)  
+	border-radius: 3px
+	-webkit-appearance: none
+	appearance: none
 	+os-l
-	font-size: 24px 
+	font-size: 24px
+	+tr(background 200ms)
+	&:hover
+		background: #ffca4a  
 	+tablet
 		width: 11% 
 	+r(840)
@@ -210,15 +227,25 @@
 		width: 85% 
 
 .services__item
-	+box-sizing(border-box)
+	+box
 	padding: 5% 5% 5% 7%
+	border-radius: 4px
 	width: 50% 
 	vertical-align: top
 	cursor: pointer
+	background: transparent 
+	border: 1px solid transparent
+	+transition(opacity 200ms, border-color 200ms, background 200ms)
 	&:hover
-		+box-shadow(0 0 0 1px rgba(black, .6) inset)
-		opacity: .7 
-		+transition(.1s)
+		background: #FCF5E4
+		border-color: rgba(black, .6)
+		opacity: .6
+	+r(1024)
+		border: none
+		&:hover
+			background: transparent
+			border-color: transparent
+			opacity: 1  	
 	.services__item_header
 		+os-l
 		font-size: 28px

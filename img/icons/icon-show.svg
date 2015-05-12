@@ -1,13 +1,12 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="22.000000pt" height="20.000000pt" viewBox="0 0 22.000000 20.000000"
- preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.12, written by Peter Selinger 2001-2015
-</metadata>
-<g transform="translate(0.000000,20.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-</g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
+<path fill="#639ba5" fill-rule="evenodd" clip-rule="evenodd" d="M8.613,50.637C1.906,35.934,7.355,18.266,21.633,10.02
+	c9.633-5.559,20.969-5.497,30.207-0.829l-3.051,1.762c-8.051-3.418-17.555-3.144-25.711,1.567
+	C10.227,19.938,5.242,35.754,11.059,49.039l1.675-6.258l2.789,0.746l-2.988,11.145L1.391,51.688l0.746-2.79L8.613,50.637z
+	 M65.062,21.777c8.649,15.157,3.434,34.469-11.695,43.203c-10.648,6.149-23.379,5.422-33.055-0.8l2.848-1.645
+	c8.617,4.926,19.547,5.266,28.762-0.055c13.703-7.91,18.461-25.363,10.723-39.117l-1.68,6.278l-2.785-0.75l2.984-11.145
+	l11.145,2.988l-0.747,2.786L65.062,21.777z"/>
 </svg>
