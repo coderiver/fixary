@@ -9,7 +9,7 @@ head.ready(function() {
 		}
 	});
 	$('.js-nav-toggle').click(function(){
-			$('body').toggleClass('menu');
+			$('body').toggleClass('is-menu');
 	});
 
 	$(window).scroll(function(event) {

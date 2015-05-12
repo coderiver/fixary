@@ -119,15 +119,18 @@ i.icon-back
 	display: table-row
 .tc
 	display: table-cell
-	
+.is-menu
+	overflow: hidden
 .header
 	position: fixed
 	top: 0
 	left: 0 
-	right: 0   
+	width: 100% 
 	z-index: 1000
 	padding-bottom: 16px 
 	+transition(all .2s linear)
+	.is-menu & 
+		left: 220px 
 	&.is-atbottom
 		background: rgba(#073141,.7) 
 		top: -18px 
@@ -194,7 +197,8 @@ i.icon-back
 		padding: 32px 0
 		position: fixed
 		left: -220px
-		
+		.is-menu &
+			left: 0 
 		.header__nav_in
 			height: 100% 
 			position: relative
@@ -360,8 +364,9 @@ i.icon-back
 			i
 				vertical-align: bottom
 				padding-right: 3% 
+				
+
 .out
 	+transition(.3s)
-	
-.trans
+.is-menu .out
 	+translate(220px,0)
