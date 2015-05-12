@@ -45,5 +45,32 @@ head.ready(function() {
 		$(window).scroll(function(){
 			visibility();
 		});
+
+	// main page nav
+	
+	function scrollNav(){
+		$('.js-section').each(function(){
+            var pos = $(this).offset().top;
+            var id = $(this).attr('id');
+            if( $(window).scrollTop() >= (pos - 71)){
+                $('.nav__link a').removeClass('is-active');
+                $('[href = #'+id+']').addClass('is-active');
+            }
+        });
+	};
+	scrollNav();	
+
+	$('.nav__link a').on('click', function(){
+		var section = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(section).offset().top
+		}, 500);
+		return false;
+	});
+
+	$(window).scroll(function(){
+		scrollNav();
+	});
+
 });
 

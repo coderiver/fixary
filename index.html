@@ -9,21 +9,21 @@
 </head>
 <body>
 <!-- BEGIN header  -->
-<header class="header"><div class="header__in">
+<header id="header" class="header"><div class="header__in">
 	<div class="humb js-nav-toggle">
 		<div></div>		
 		<div></div>		
 		<div></div>		
 	</div>
-	<div class="header__logo logo"></div>
+	<a href="#header" class="header__logo logo"></a>
 	<nav class="header__nav nav"><div class="header__nav_in">
 		<ul class="nav__link">
-			<li><a href="#">About</a></li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">Prices</a></li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">Reasons</a></li>
-			<li><a href="#">Contacts</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#prices">Prices</a></li>
+			<li><a href="#news">News</a></li>
+			<li><a href="#reasons">Reasons</a></li>
+			<li><a href="#contacts">Contacts</a></li>
 			<li><a href="#">Blog</a></li>
 		</ul>
 	</div></nav>
@@ -77,7 +77,7 @@
 
 	<div class="main">
 		<!-- BEGIN about  -->
-		<div class="about js-view"><div class="about__in">
+		<div id="about" class="about js-view js-section"><div class="about__in">
 			<h2 class="block_header">About</h2>
 			<div class="about__content">
 				<p>No matter where in the world you live, no matter when you want to contact us, we can bring a certified PC or Mac technician to you in seconds via a remote connection.</p>
@@ -88,7 +88,7 @@
 		<!-- END about -->
 
 		<!-- BEGIN serivces  -->
-		<div class="services"><div class="services__in">
+		<div id="services" class="services js-section"><div class="services__in">
 			<h2 class="block_header">Services</h2>
 			<div class="services__content table js-view">
 			<div class="row">
@@ -125,7 +125,7 @@
 		<!-- END serivces -->
 
 		<!-- BEGIN pricing  -->
-		<div class="pricing"><div class="pricing__in">
+		<div id="prices" class="pricing js-section"><div class="pricing__in">
 			<h2 class="block_header">Pricing plans</h2>
 			<div class="pricing__content js-view">
 				<div class="table table--gray is-left">
@@ -212,7 +212,7 @@
 
 
 		<!-- BEGIN news  -->
-		<div class="news"><div class="news__in">
+		<div id="news" class="news js-section"><div class="news__in">
 			<h2 class="block_header">News</h2>
 			<div class="news__container js-view"><div class="news__container_wrap">
 				<article class="post">
@@ -259,7 +259,7 @@
 
 
 		<!-- BEGIN advantages  -->
-		<div class="advantages"><div class="advantages__in">
+		<div id="reasons" class="advantages js-section"><div class="advantages__in">
 			<h2 class="block_header">Why Fixary</h2>
 			<div class="advantages__content">
 				<div class="advantages__item js-view">
@@ -294,7 +294,7 @@
 
 
 	<!-- BEGIN work  -->
-	<div class="work"><div class="work__in">
+	<div id="contacts" class="work js-section"><div class="work__in">
 		<h2 class="block_header">We work worldwide</h2>
 		<div class="work__content">
 			<div class="location location--1">
@@ -541,7 +541,7 @@
 	<!-- END work -->
 </div>
 <div id="bg_video" class="is-overlay">
-	<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+	<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" poster="img/background_plug.jpg">
 		<source src="video/Fixary_Background.mp4"></source>
 		<source src="video/Fixary_Background.webmhd"></source>
 		<source src="video/Fixary_Background.oggtheora"></source>
