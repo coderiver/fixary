@@ -29,7 +29,7 @@ body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
-	background-color: #03283D 
+	background-color: #03283D
 	+header_br
 		overflow-x: hidden 
 	
@@ -125,7 +125,8 @@ i.icon-back
 .tc
 	display: table-cell
 .is-menu
-	overflow: hidden
+	overflow-x: hidden
+	overflow-y: auto
 .header
 	position: fixed
 	top: 0
@@ -210,40 +211,98 @@ i.icon-back
 						display: block
 	
 	+header_br
-		height: 100vh 
-		background-color: #061827
-		+box-sizing(border-box)
-		padding: 32px 0
-		position: fixed
-		left: 0
-		top: 0
-		+transform(translateX(-220px))
-		+tr(transform 300ms)
-		.is-menu &
-		.header__nav_in
-			height: 100% 
-			position: relative
-		ul.nav__link
-			width: 220px 
-			margin-left: 0
-			li
-				display: block
-				float: none
-				padding: 0
-				a
-					padding: 6% 0 6% 28px
-					+box-sizing(border-box)
-					&:after
-						border-left: 2px solid #fff 
-						border-bottom: 0
-						height: 65%
-						left: 0 
-						top: 50% 
-						+translate(0,-50%) 
+		display: none
+		// height: 100vh 
+		// background-color: #061827
+		// +box-sizing(border-box)
+		// padding: 32px 0
+		// position: fixed
+		// left: 0
+		// top: 0
+		// +transform(translateX(-220px))
+		// +tr(transform 300ms)
+		// .is-menu &
+		// .header__nav_in
+		// 	height: 100% 
+		// 	position: relative
+		// ul.nav__link
+		// 	width: 220px 
+		// 	margin-left: 0
+		// 	li
+		// 		display: block
+		// 		float: none
+		// 		padding: 0
+		// 		a
+		// 			padding: 6% 0 6% 28px
+		// 			+box-sizing(border-box)
+		// 			&:after
+		// 				border-left: 2px solid #fff 
+		// 				border-bottom: 0
+		// 				height: 65%
+		// 				left: 0 
+		// 				top: 50% 
+		// 				+translate(0,-50%) 
 	.nav__social
 		display: none
+.mob-nav
+	position: fixed
+	top: 0
+	left: 0
+	height: 100vh
+	width: 220px
+	background: #061827
+	overflow-y: auto
+	+transform(translateX(-220px))
+	+tr(transform 300ms)
+	&.is-open
+		+transform(translateX(0))
+	.mob-nav__in
+		position: relative
+		min-height: 100%	
+	.mob-nav__link
+		padding-bottom: 70px
+		li
+			a
+				display: block
+				padding: 22px 10px 22px 20px 
+				font-size: 20px 
+				+os-l
+				opacity: .5
+				position: relative
+				color: #fff
+				transition: .2s
+				&:after
+					content: ''
+					display: none
+					position: absolute 
+					top: 0
+					left: 0
+					bottom: 0 
+					width: 2px
+					background: #fff 
+					+tr(top 200ms)
+				.is-atbottom &
+					&:after
+						top: 0	 
+				&:hover, &.is-active
+					opacity: 1
+					background: #06202f 
+					&:after
+						display: block			
+	.mob-nav__socials
+		position: absolute
+		bottom: 22px
+		right: 0
+		left: 0
+		text-align: center
+		li
+			display: inline-block
+			vertical-align: middle
+			margin: 0 10px 
+			a
+				color: rgba(#fff, 0.2)
+				font-size: 16px
 			
-		
 .header__contact
 	position: absolute
 	right: 0
@@ -276,8 +335,9 @@ i.icon-back
 				padding-right: 10px	
 	.profile
 		margin-right: 10px
-		a
-			+r(660)
+		+r(660)
+			margin-right: 0
+			a
 				font-size: 0
 	.call
 		+r(660)

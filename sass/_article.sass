@@ -3,7 +3,9 @@
 .article
 	margin-top: 80px
 	.news__container
-		padding-top: 100px 
+		padding-top: 100px
+		+r(767)
+			padding-top: 50px 
 	.article__back
 		display: block
 		color: #64959f
@@ -30,12 +32,16 @@
 		.post__heading_text
 			font-size: 50px 
 			margin-bottom: 20px 
-			letter-spacing: 1px 
+			letter-spacing: 1px
+			+r(768)
+				font-size: 36px 
 		.post__main
 			+os-l
 			font-size: 18px 
 			line-height: 1.8em
 			letter-spacing: 0.01em  
 			p
-				padding-bottom: 30px 
+				padding-bottom: 30px
+			+r(768)
+				font-size: 16px	 
 				
