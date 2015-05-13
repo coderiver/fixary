@@ -486,15 +486,9 @@
 .advantages
 	.advantages__in
 		position: relative
-		padding-bottom: 280px 
-		// &:after
-		// 	content: ''
-		// 	display: block
-		// 	+png(man)
-		// 	position: absolute 
-		// 	bottom: -29px 
-		// 	left: 55%
-		// 	+translate(-50%,0) 
+		padding-bottom: 280px
+		+r(767)
+			padding-bottom: 200px	
 		.advantages__pict
 			position: absolute
 			left: 50%
@@ -514,6 +508,11 @@
 		&:nth-of-type(2n)
 			padding-left: 6%  
 			padding-right: 0
+		+r(766)
+			width: 100%
+			padding-right: 0 
+			&:nth-of-type(2n)
+				padding-left: 0	
 	.advantages__item_header
 		padding-bottom: 10px 
 		h5

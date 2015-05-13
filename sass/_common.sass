@@ -143,6 +143,8 @@ i.icon-back
 		.header__contact
 			li
 				padding: 20px 0 0 0
+				+r(660)
+					padding: 25px 0 0 0 
 	a
 		color: #FFF 
 	.header__in
@@ -165,6 +167,9 @@ i.icon-back
 				margin: 7px 0
 		+header_br
 			display: block
+		+r(660)
+			margin-top: 25px
+			margin-right: 10px	
 	   
 		
 .header__nav
@@ -260,29 +265,37 @@ i.icon-back
 			white-space: nowrap
 			&:hover
 				opacity: 1
-				transition: .2s 
-
-	li i
-		padding-right: 14px 
-		position: relative
-		top: 2px
+				transition: .2s 		
+		i
+			padding-right: 14px 
+			position: relative
+			top: 2px
+		+r(660)
+			padding: 44px 0 0 0
+			i
+				padding-right: 10px	
 	.profile
-		+r(600)
-			display: none
+		margin-right: 10px
+		a
+			+r(660)
+				font-size: 0
 	.call
-
-		+r(488)
+		+r(660)
+			margin-right: 5px
 			i
 				display: none
 			a
-				font-size: 14px 
+				font-size: 16px 
 		
 .header__logo
 	float: left
-	//margin-top: 30px
-	margin-top: 12px 
+	margin-top: 12px
+	+r(660)
+		margin-top: 20px  
 .logo
 	+s(logo)
+	+r(660)
+		+s(logo-small)
 .logo--big
 	+s(logo--big)
 
@@ -335,7 +348,13 @@ i.icon-back
 	li
 		display: inline-block
 		width: 20%
-		+box-sizing(border-box)
+		+box
+		&:first-child
+			a
+				border-radius: 4px 0 0 4px
+		&:last-child
+			a
+				border-radius: 0 4px 4px 0	
 		a
 			width: 99% 
 			display: block
