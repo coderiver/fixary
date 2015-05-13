@@ -444,16 +444,12 @@ i.icon-back { background: url('../img/icons-s7818f8511d.png') 0 -51px no-repeat;
 .eula .block_header { padding: 88px 0 65px; }
 
 .eula__content { margin: 0 auto; padding-bottom: 123px; }
-
-.eula__main_header { font-family: "Open Sans", Arial, sans-serif; font-weight: 600; font-size: 22px; text-align: center; padding-bottom: 32px; }
-
-.eula__paragraph { padding: 0 7.5%; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 18px; padding-bottom: 30px; line-height: 1.7em; }
-
-.eula__header { padding: 0 7.5%; font-family: "Open Sans", Arial, sans-serif; font-weight: 600; font-size: 20px; }
-
-.eula__img { position: relative; width: 102%; height: auto; left: -1%; margin-bottom: 30px; *zoom: 1; }
-.eula__img:after { content: " "; display: table; clear: both; }
-.eula__img strong { display: block; background: url("../img/keyboard.png") no-repeat 0 0; width: 1220px; height: 567px; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; width: 100%; }
+.eula__content h5 { font-family: "Open Sans", Arial, sans-serif; font-weight: 600; font-size: 22px; text-align: center; padding-bottom: 32px; }
+.eula__content p { padding: 0 7.5%; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 18px; padding-bottom: 30px; line-height: 1.7em; }
+.eula__content h6 { padding: 0 7.5%; font-family: "Open Sans", Arial, sans-serif; font-weight: 600; font-size: 20px; }
+.eula__content img { position: relative; width: 102%; height: auto; left: -1%; margin-bottom: 30px; border-radius: 4px; *zoom: 1; }
+.eula__content img:after { content: " "; display: table; clear: both; }
+@media only screen and (max-width: 767px) { .eula__content img { width: 100%; left: 0; border-radius: 0; } }
 
 .blog { margin-top: 80px; }
 .blog .block_header { padding: 88px 0 80px; }
