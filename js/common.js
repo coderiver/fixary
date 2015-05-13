@@ -22,6 +22,7 @@ head.ready(function() {
 		}
 		else{
 			$header.removeClass('is-atbottom');
+			$('.nav__link a').removeClass('is-active');
 		}
 	}
 	stickyHeader();

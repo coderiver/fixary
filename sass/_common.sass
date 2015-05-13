@@ -149,10 +149,11 @@ i.icon-back
 	a
 		color: #FFF 
 	.header__in
-		width: 95%
-		margin: 0 auto  
+		padding: 0 30px
+		+box    
 		+clr
-
+		+r(767)
+			padding: 0 10px 
 	.humb
 		width: 30px 
 		display: none
@@ -205,43 +206,14 @@ i.icon-back
 				.is-atbottom &
 					&:after
 						top: 0	 
-				&:hover, &.is-active
+				&:hover
+					opacity: 1
+				&.is-active		
 					opacity: 1 
 					&:after
 						display: block
-	
 	+header_br
-		display: none
-		// height: 100vh 
-		// background-color: #061827
-		// +box-sizing(border-box)
-		// padding: 32px 0
-		// position: fixed
-		// left: 0
-		// top: 0
-		// +transform(translateX(-220px))
-		// +tr(transform 300ms)
-		// .is-menu &
-		// .header__nav_in
-		// 	height: 100% 
-		// 	position: relative
-		// ul.nav__link
-		// 	width: 220px 
-		// 	margin-left: 0
-		// 	li
-		// 		display: block
-		// 		float: none
-		// 		padding: 0
-		// 		a
-		// 			padding: 6% 0 6% 28px
-		// 			+box-sizing(border-box)
-		// 			&:after
-		// 				border-left: 2px solid #fff 
-		// 				border-bottom: 0
-		// 				height: 65%
-		// 				left: 0 
-		// 				top: 50% 
-		// 				+translate(0,-50%) 
+		display: none 
 	.nav__social
 		display: none
 .mob-nav
@@ -304,13 +276,11 @@ i.icon-back
 				font-size: 16px
 			
 .header__contact
-	position: absolute
-	right: 0
-	top: 0  
+	float: right 
 	text-align: right
 	white-space: nowrap
 	li
-		padding: 38px 0 0 0 
+		padding: 22px 0 0 0 
 		display: inline-block
 		vertical-align: top
 		margin-right: 40px 
@@ -330,13 +300,12 @@ i.icon-back
 			position: relative
 			top: 2px
 		+r(660)
-			padding: 44px 0 0 0
+			padding: 26px 0 0 0
 			i
-				padding-right: 10px	
+				padding-right: 0	
 	.profile
-		margin-right: 10px
+		margin-right: 0
 		+r(660)
-			margin-right: 0
 			a
 				font-size: 0
 	.call
