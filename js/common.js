@@ -82,6 +82,17 @@ head.ready(function() {
 		return false;
 	});
 
+	// location tooltips
+
+	$('.js-close').on('click', function(){
+		$(this).parents('.location__tooltip').removeClass('is-active');
+	});
+	$('.location__dot').on('click', function(){
+		$('.location__tooltip').removeClass('is-active');
+		$(this).parents('.location').find('.location__tooltip').addClass('is-active');
+	});
+
+
 	$(window).scroll(function(){
 		scrollNav();
 	});

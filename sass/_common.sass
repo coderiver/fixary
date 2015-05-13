@@ -330,25 +330,40 @@ i.icon-back
 	width: inherit 
 	+clr
 	a
-		color: #fbf6e2
+		color: rgba(#fbf6e2, 0.7)
 		+os-l
 		font-size: 32px
-		letter-spacing: 1px  
-	.is-left
-		float: left
-	.is-right
-		float: right
+		letter-spacing: 1px
+		+tr(color 200ms)
+		&:hover
+			color: #fbf6e2	  
+		&.is-left
+			float: left
+		&.is-right
+			float: right
+	+r(568)
+		text-align: center
+		a
+			&.is-right, &.is-left
+				display: block
+				float: none
+				margin-bottom: 10px		
 .footer__social
 	color: #FFF 
 	width: inherit 
 	font-size: 0
 	+border-radius(3px)
 	margin-top: 30px 
-	overflow: hidden 
+	overflow: hidden
+	+r(568)
+		width: 90%
+		margin: 0 auto   
 	li
 		display: inline-block
 		width: 20%
 		+box
+		+r(568)
+			text-align: center
 		&:first-child
 			a
 				border-radius: 4px 0 0 4px
@@ -375,6 +390,8 @@ i.icon-back
 		font-size: 19px 
 		opacity: .6
 		+os-l
+		+r(568)
+			display: none
 .footer__link
 	margin-top: 50px
 	padding-bottom: 45px 
@@ -387,6 +404,12 @@ i.icon-back
 		&:last-child
 			a
 				color: #748c90
+			+r(568)
+				display: block	
+		+r(568)
+			margin: 0 10px 20px
+			&:last-child
+				margin: 0  		
 		span
 			display: inline-block
 			vertical-align: middle
@@ -406,9 +429,13 @@ i.icon-back
 			white-space: nowrap 
 			&:hover
 				opacity: 1
+			+r(568)
+				font-size: 12px	
 			i
 				vertical-align: bottom
-				padding-right: 3% 
+				padding-right: 3%
+				+r(568)
+					vertical-align: middle		 
 				
 
 .out
