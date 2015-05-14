@@ -33,6 +33,9 @@ input[type="button"], input[type="submit"] { cursor: pointer; }
 
 .is-overlay { display: block; width: 100%; height: 100%; }
 
+.clr { *zoom: 1; }
+.clr:after { content: " "; display: table; clear: both; }
+
 #bg_video { position: fixed; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden; z-index: -9; }
 #bg_video video { position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; }
 
@@ -123,11 +126,32 @@ i.icon-back { background: url('../img/icons-s3adc1cace0.png') 0 -160px no-repeat
 .header__contact li i { padding-right: 14px; position: relative; top: 2px; }
 @media only screen and (max-width: 660px) { .header__contact li { padding: 26px 0 0 0; }
   .header__contact li i { padding-right: 0; } }
-.header__contact .profile { margin-right: 0; }
+.header__contact .profile { position: relative; margin-right: 0; }
 @media only screen and (max-width: 660px) { .header__contact .profile a { font-size: 0; } }
 @media only screen and (max-width: 660px) { .header__contact .call { margin-right: 5px; }
   .header__contact .call i { display: none; }
   .header__contact .call a { font-size: 16px; } }
+
+.tooltip { position: absolute; top: 75px; right: 0; width: 340px; background: #fff; border-radius: 3px; text-align: left; z-index: 99; }
+.tooltip:before { content: ""; position: absolute; top: -8px; right: 25px; width: 0px; height: 0px; border-style: solid; border-width: 0 12.5px 8px 12.5px; border-color: transparent transparent #fff transparent; }
+.tooltip .tooltip__in { padding: 0 17px; }
+.tooltip .tooltip__exit { display: block; border-radius: 0 0 3px 3px; background: #e7edf0; height: 52px; line-height: 52px; text-align: center; font-size: 18px; color: #a8b9c1; opacity: 1; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
+.tooltip .tooltip__exit:hover { background: #b7ced4; color: #6d7f87; }
+
+.nickname { padding: 17px 0; border-bottom: 1px solid #e8edf0; }
+.nickname .nickname__name { color: #a8b9c1; font-size: 14px; }
+.nickname .nickname__value { float: left; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 22px; color: #000; }
+.nickname .nickname__edit { float: right; width: 52px; margin-top: 6px; font-size: 16px; color: #738b93; background: #e7eef1; border-radius: 3px; text-align: center; cursor: pointer; -moz-transition: background 200ms, color 200ms; -o-transition: background 200ms, color 200ms; -webkit-transition: background 200ms, color 200ms; transition: background 200ms, color 200ms; }
+.nickname .nickname__edit:hover { background: #a6c2ca; color: #3e4e53; }
+.nickname .nickname__view.is-hidden { display: none; }
+.nickname .nickname__form { display: none; }
+.nickname .nickname__form.is-open { display: block; }
+
+.status { margin-bottom: 17px; }
+.status .status__title { color: #a8b9c1; font-size: 14px; }
+.status .status__name { float: left; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 22px; color: #000; }
+.status .status__btn { float: right; width: 87px; height: 25px; margin-top: 6px; border-radius: 3px; background: #f7b30e; color: #fff; font-size: 16px; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
+.status .status__btn:hover { background: #ffca4a; }
 
 .header__logo { float: left; margin-top: 12px; }
 @media only screen and (max-width: 660px) { .header__logo { margin-top: 20px; } }
