@@ -351,6 +351,7 @@ i.icon-back
 			background: #b7ced4
 			color: #6d7f87 	
 .nickname
+	margin-bottom: 17px
 	padding: 17px 0
 	border-bottom: 1px solid #e8edf0
 	.nickname__name
@@ -361,27 +362,52 @@ i.icon-back
 		+os-l
 		font-size: 22px
 		color: #000
-	.nickname__edit
+	.edit, .btn
 		float: right
-		width: 52px
-		margin-top: 6px
-		font-size: 16px
-		color: #738b93
-		background: #e7eef1
-		border-radius: 3px
-		text-align: center
-		cursor: pointer
-		+transition(background 200ms, color 200ms)
-		&:hover
-			background: #a6c2ca
-			color: #3e4e53 
-	.nickname__view
-		&.is-hidden
-			display: none	 	  				 
 	.nickname__form
-		display: none
-		&.is-open
-			display: block
+		.input
+			vertical-align: middle
+			width: 193px
+			margin-right: 5px
+			padding: 0 12px 
+		.button
+			vertical-align: middle
+			font-size: 20px
+			width: 81px
+			margin-right: 3px
+	.nickname__close
+		display: inline-block
+		vertical-align: middle
+		+s(close-big)
+		opacity: 0.5
+		+tr(opacity 200ms)
+		&:hover
+			opacity: 1 		  
+.edit
+	padding: 0 17px
+	height: 25px
+	margin-top: 6px
+	font-size: 16px
+	color: #738b93
+	background: #e7eef1
+	border-radius: 3px
+	text-align: center
+	cursor: pointer
+	+transition(background 200ms, color 200ms)
+	&:hover
+		background: #a6c2ca
+		color: #3e4e53
+.btn
+	padding: 0 17px
+	height: 25px
+	margin-top: 6px
+	border-radius: 3px
+	background: #f7b30e
+	color: #fff
+	font-size: 16px
+	+tr(background 200ms)
+	&:hover
+		background: #ffca4a 		
 .status
 	margin-bottom: 17px
 	.status__title
@@ -392,18 +418,8 @@ i.icon-back
 		+os-l
 		font-size: 22px
 		color: #000
-	.status__btn
-		float: right	
-		width: 87px
-		height: 25px
-		margin-top: 6px
-		border-radius: 3px
-		background: #f7b30e
-		color: #fff
-		font-size: 16px
-		+tr(background 200ms)
-		&:hover
-			background: #ffca4a 
+	.btn, .edit
+		float: right
 .header__logo
 	float: left
 	margin-top: 12px
