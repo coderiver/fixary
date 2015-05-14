@@ -15,7 +15,8 @@
     max-width: 900px
     width: 90%
     +os
-    padding: 70px 10px 57px
+    +box
+    padding: 70px 50px 57px
     background: #fff
     border-radius: 5px
     &.popup_small
@@ -30,6 +31,21 @@
         cursor: pointer
         &:hover
             opacity: 1
+    .popup__prev, .popup__next
+        position: absolute
+        top: 50%
+        margin-top: -23px
+        opacity: 0.7 
+        +tr(opacity 200ms)
+        cursor: pointer
+        &:hover
+            opacity: 1
+    .popup__prev
+        left: -45px
+        +s(popup-prev)
+    .popup__next
+        right: -45px
+        +s(popup-next)                
     .popup__header
         margin-bottom: 10px    
         text-align: center
@@ -290,4 +306,33 @@
             color: #425365
             +tr(opacity)
             &:hover
-                opacity: 0.7     
+                opacity: 0.7
+.service
+    text-align: left
+    .service__title
+        margin-bottom: 45px
+        font-size: 0
+        img, span
+            display: inline-block
+            vertical-align: middle
+        img
+            margin-right: 27px
+        span
+            font-size: 50px
+            +os-l
+            color: #000
+    .service__in
+        margin-bottom: 55px
+        font-size: 18px
+        color: #425365
+        +os-l
+    .service__form                             
+        .input
+            display: inline-block
+            vertical-align: middle
+            width: 42.5%
+            margin-right: 1% 
+        .button
+            vertical-align: middle
+            width: 13%
+            font-size: 22px 
