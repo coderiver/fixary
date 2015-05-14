@@ -500,6 +500,7 @@ i.icon-back { background: url('../img/icons-s5636689968.png') 0 -160px no-repeat
 .popup .popup__call { display: inline-block; vertical-align: middle; margin-left: 22px; }
 .popup .popup__call p { font-size: 14px; color: #bfc6cd; }
 .popup .popup__call a { font-size: 16px; color: #001d34; }
+.popup .popup__text { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 20px; color: #7d838a; }
 .popup .popup__footer { padding-top: 40px; text-align: center; font-size: 16px; color: #425365; }
 .popup .popup__footer a { font-family: "Open Sans", Arial, sans-serif; font-weight: 700; color: #425365; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
 .popup .popup__footer a:hover { color: #94adb6; }
