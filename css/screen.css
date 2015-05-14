@@ -492,6 +492,7 @@ i.icon-back { background: url('../img/icons-s50bc11ce40.png') 0 -160px no-repeat
 .overlay:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 
 .popup { position: relative; display: inline-block; vertical-align: middle; max-width: 900px; width: 90%; font-family: "Open Sans", Arial, sans-serif; padding: 70px 10px 57px; background: #fff; border-radius: 5px; }
+.popup.popup_small { max-width: 700px; }
 .popup .popup__close { position: absolute; top: 10px; right: 10px; background: url('../img/icons-s50bc11ce40.png') 0 -26px no-repeat; width: 11px; height: 11px; opacity: 0.3; -moz-transition: opacity 200ms; -o-transition: opacity 200ms; -webkit-transition: opacity 200ms; transition: opacity 200ms; cursor: pointer; }
 .popup .popup__close:hover { opacity: 1; }
 .popup .popup__header { margin-bottom: 10px; text-align: center; }
@@ -570,3 +571,10 @@ i.icon-back { background: url('../img/icons-s50bc11ce40.png') 0 -160px no-repeat
 .tarrif:hover { border-color: #999; }
 .tarrif .tarrif__name { float: left; width: 133px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; padding-left: 22px; line-height: 50px; font-size: 22px; }
 .tarrif .tarrif__details { overflow: hidden; line-height: 50px; font-size: 14px; color: #bec7c7; }
+
+.congrats { position: relative; }
+.congrats > img { display: inline-block; margin-bottom: 45px; }
+.congrats .congrats__title { margin-bottom: 10px; font-size: 50px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; color: #000; }
+.congrats .congrats__in { font-size: 22px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; color: #425365; }
+.congrats .congrats__in a { font-family: "Open Sans", Arial, sans-serif; font-weight: 700; color: #425365; -moz-transition: opacity; -o-transition: opacity; -webkit-transition: opacity; transition: opacity; }
+.congrats .congrats__in a:hover { opacity: 0.7; }
