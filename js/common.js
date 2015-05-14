@@ -104,6 +104,29 @@ head.ready(function() {
 		$(this).parents('.location').find('.location__tooltip').addClass('is-active');
 	});
 
+	// password inputs
+
+	$('.js-password').each(function(){
+		$(this).find('.input').on('keyup', function(){
+			if ($(this).val().length !== 0) {
+				$(this).parent().find('.js-pass-switch').addClass('is-visible');
+			}
+			else {
+				$(this).parent().find('.js-pass-switch').removeClass('is-visible');
+			}
+		});
+	});
+	$('.js-pass-switch').on('click', function(){
+		if ($(this).hasClass('is-open')) {
+			$(this).parent().find('.input').attr('type', 'password');
+			$(this).removeClass('is-open');
+		}
+		else {
+			$(this).parent().find('.input').attr('type', 'text');
+			$(this).addClass('is-open');
+		}
+		
+	});
 
 	$(window).scroll(function(){
 		scrollNav();
