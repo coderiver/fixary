@@ -589,30 +589,64 @@
 <!-- END out-->
 <!-- popups -->
 <div class="overlay">
-	<div id="popup-recovery" class="popup">
+	<div id="pricing-popup" class="popup">
 		<div class="popup__close"></div>
 		<div class="popup__in">
 			<div class="popup__header">
-				<div class="popup__title">PASSWORD recovery</div>
+				<div class="popup__title">subscribe</div>
+				<div class="popup__call">
+					<p>or just call us NOW</p>
+					<a href="tel:+1 888 424 13 28">+1 888 424 13 28</a>
+				</div>
 			</div>
-			<div class="popup__text">Enter your email address and we'll get you back</div>
 			<div class="form invalid">
 				<div class="form__alert">
-					You have entered wrong email
+					You have entered wrong password or email
 				</div>
 				<form>
+					<div class="form__col">
+						<label class="radio">
+							<input type="radio" name="price">
+							<div class="tarrif">
+								<div class="tarrif__name">Essential</div>
+								<div class="tarrif__details">48$ per 1-time fix</div>
+							</div>
+						</label>
+						<label class="radio">
+							<input type="radio" name="price">
+							<div class="tarrif">
+								<div class="tarrif__name">Preferred</div>
+								<div class="tarrif__details">72$ per 1 month</div>
+							</div>
+						</label>
+						<label class="radio">
+							<input type="radio" name="price">
+							<div class="tarrif">
+								<div class="tarrif__name">Premium</div>
+								<div class="tarrif__details">365$ per 1 year</div>
+							</div>
+						</label>
+					</div>
 					<div class="form__col">
 						<div class="form__row">
 							<input class="input" type="text" placeholder="Email">
 						</div>
-						<div class="form__row">
-							<button type="submit" class="button">Reguest Reset Link</button>
+						<div class="form__row password js-password">
+							<span class="password__switch js-pass-switch"></span>
+							<input class="input" type="password" placeholder="Password">
+						</div>
+						<div class="form__row password js-password">
+							<span class="password__switch js-pass-switch"></span>
+							<input class="input" type="password" placeholder="Repeat password">
 						</div>
 					</div>
+					<div class="form__submit">
+						<button type="submit" class="button">Proceed to secure checkout</button>
+					</div>
+					<div class="form__note">
+						By clicking this button, you agree to <a href='#'>Fixary's Terms of Use</a>
+					</div>
 				</form>
-			</div>
-			<div class="popup__footer">
-				<p>Back to <a href="#">Log In</a></p>
 			</div>
 		</div>
 	</div>	
