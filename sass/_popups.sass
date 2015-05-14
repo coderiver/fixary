@@ -5,6 +5,7 @@
     bottom: 0
     right: 0
     left: 0
+    overflow-y: auto
     +vertical
     background: rgba(#001a1e, 0.9)
     z-index: 999
@@ -335,4 +336,26 @@
         .button
             vertical-align: middle
             width: 13%
-            font-size: 22px 
+            font-size: 22px
+.popup-article
+    text-align: left
+    .popup-article__title
+        font-size: 36px
+        +os-l
+        color: #000
+        margin-bottom: 5px
+    .popup-article__date
+        font-size: 16px
+        color: #8d9fb2
+        margin-bottom: 25px                   
+    article
+        font-size: 18px
+        color: #425365
+        +os-l
+        p
+            margin-bottom: 20px
+        img
+            display: block
+            width: 100%
+            height: auto 
+            margin-bottom: 20px     

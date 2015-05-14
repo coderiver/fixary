@@ -25,6 +25,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; background-color: #03283D; }
 @media only screen and (max-width: 1255px) { body { overflow-x: hidden; } }
+body.no-scroll { overflow: hidden; }
 
 a { text-decoration: none; }
 
@@ -488,7 +489,7 @@ i.icon-back { background: url('../img/icons-s3adc1cace0.png') 0 -160px no-repeat
 .cap__footer p { letter-spacing: 1px; }
 .cap__footer a { color: #FFF; font-family: "Open Sans", Arial, sans-serif; font-weight: 700; }
 
-.overlay { position: fixed; top: 0; bottom: 0; right: 0; left: 0; text-align: center; font-size: 0; background: rgba(0, 26, 30, 0.9); z-index: 999; }
+.overlay { position: fixed; top: 0; bottom: 0; right: 0; left: 0; overflow-y: auto; text-align: center; font-size: 0; background: rgba(0, 26, 30, 0.9); z-index: 999; }
 .overlay:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 
 .popup { position: relative; display: inline-block; vertical-align: middle; max-width: 900px; width: 90%; font-family: "Open Sans", Arial, sans-serif; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 70px 50px 57px; background: #fff; border-radius: 5px; }
@@ -591,3 +592,10 @@ i.icon-back { background: url('../img/icons-s3adc1cace0.png') 0 -160px no-repeat
 .service .service__in { margin-bottom: 55px; font-size: 18px; color: #425365; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
 .service .service__form .input { display: inline-block; vertical-align: middle; width: 42.5%; margin-right: 1%; }
 .service .service__form .button { vertical-align: middle; width: 13%; font-size: 22px; }
+
+.popup-article { text-align: left; }
+.popup-article .popup-article__title { font-size: 36px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; color: #000; margin-bottom: 5px; }
+.popup-article .popup-article__date { font-size: 16px; color: #8d9fb2; margin-bottom: 25px; }
+.popup-article article { font-size: 18px; color: #425365; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
+.popup-article article p { margin-bottom: 20px; }
+.popup-article article img { display: block; width: 100%; height: auto; margin-bottom: 20px; }
