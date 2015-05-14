@@ -509,13 +509,13 @@ i.icon-back { background: url('../img/icons-s50bc11ce40.png') 0 -160px no-repeat
 .form.invalid .form__alert { opacity: 1; }
 .form .form__alert { opacity: 0; margin-bottom: 15px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 18px; color: #e35845; }
 .form .form__col { width: 330px; display: inline-block; vertical-align: top; margin-left: 17px; }
+.form .form__col.form__col-long { width: 440px; }
 .form .form__col:first-child { margin-left: 0; }
 .form .form__row { *zoom: 1; margin-bottom: 12px; }
 .form .form__row:after { content: " "; display: table; clear: both; }
 .form .form__note { font-size: 12px; color: #7D838A; }
 .form .form__note a { font-weight: bold; text-decoration: none; color: #95ADB5; }
 .form .form__submit { padding-top: 20px; text-align: center; margin-bottom: 12px; }
-.form .form__submit .button { width: auto; max-width: 100%; padding: 0 48px; }
 
 .input { width: 100%; height: 52px; padding: 0 22px; border-radius: 3px; border: 1px solid transparent; background: rgba(206, 218, 220, 0.3); font-size: 18px; color: #000; font-family: "Open Sans", Arial, sans-serif; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .input:-ms-input-placeholder { color: #6f8487; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
@@ -547,6 +547,7 @@ i.icon-back { background: url('../img/icons-s50bc11ce40.png') 0 -160px no-repeat
 
 .button { width: 100%; height: 52px; border-radius: 3px; background: #f7b30e; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; font-size: 28px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; color: #fff; }
 .button:hover { background: #ffca4a; }
+.button.button_big { width: auto; max-width: 100%; padding: 0 48px; }
 
 .password { position: relative; }
 .password .password__switch { opacity: 0; position: absolute; top: 50%; right: 15px; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); -moz-transition: opacity 200ms; -o-transition: opacity 200ms; -webkit-transition: opacity 200ms; transition: opacity 200ms; cursor: pointer; }
