@@ -193,6 +193,12 @@ head.ready(function() {
 	$(window).scroll(function(){
 		scrollNav();
 	});
-
+	$('.overlay, .popup__close').click(function(event) {
+		e = $(event.target);
+		if(e.hasClass('overlay') || e.hasClass('popup__close')){
+			$('.overlay,.popup').hide();
+		}
+		
+	});
 });
 

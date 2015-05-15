@@ -118,6 +118,10 @@ i.icon-close
 	+s(icon-close)
 i.icon-teamviewer
 	+s(icon-teamviewer)
+	background: url(../img/iconfooter.png) no-repeat 0 0
+	-webkit-background-size: contain 
+	-o-background-size: contain 
+	background-size: contain  
 i.icon-back
 	+s(icon-back)
 // common blocks  
@@ -601,6 +605,7 @@ i.icon-back
 			opacity: .7
 			transition: .1s
 			white-space: nowrap 
+			+gpu
 			&:hover
 				opacity: 1
 			+r(568)

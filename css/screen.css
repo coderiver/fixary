@@ -64,7 +64,7 @@ i.icon-show { width: 22px; height: 20px; }
 
 i.icon-close { background: url('../img/icons-s92e7da8291.png') 0 -224px no-repeat; width: 8px; height: 8px; }
 
-i.icon-teamviewer { background: url('../img/icons-s92e7da8291.png') 0 -592px no-repeat; width: 20px; height: 24px; }
+i.icon-teamviewer { background: url('../img/icons-s92e7da8291.png') 0 -592px no-repeat; width: 20px; height: 24px; background: url(../img/iconfooter.png) no-repeat 0 0; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; }
 
 i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat; width: 13px; height: 26px; }
 
@@ -248,7 +248,7 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 @media only screen and (max-width: 568px) { .footer__link li { margin: 0 10px 20px; }
   .footer__link li:last-child { margin: 0; } }
 .footer__link li span { display: inline-block; vertical-align: middle; font-size: 16px; margin-right: 4px; color: #748c90; opacity: 0.7; }
-.footer__link li a { color: #FFF; display: inline-block; vertical-align: middle; letter-spacing: 1px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 16px; opacity: 0.7; transition: 0.1s; white-space: nowrap; }
+.footer__link li a { color: #FFF; display: inline-block; vertical-align: middle; letter-spacing: 1px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 16px; opacity: 0.7; transition: 0.1s; white-space: nowrap; -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 .footer__link li a:hover { opacity: 1; }
 @media only screen and (max-width: 568px) { .footer__link li a { font-size: 12px; } }
 .footer__link li a i { vertical-align: bottom; padding-right: 3%; }
