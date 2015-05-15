@@ -84,7 +84,7 @@ head.ready(function() {
 	});
 
 	$('.logo').on('click', function(){
-		if($(this).is('div')){
+		if($(this).hasClass('is-insidepage')){
 			document.location.href="/";
 		}
 		else{
