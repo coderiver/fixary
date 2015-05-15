@@ -163,7 +163,8 @@ i.icon-back
 		margin-top: 27px
 		cursor: pointer
 		float: left
-		margin-right: 20px  
+		margin-right: 20px
+		+tr(transform 300ms)  
 		>div
 			width: 100%
 			height: 2px
@@ -174,7 +175,9 @@ i.icon-back
 			display: block
 		+r(660)
 			margin-top: 25px
-			margin-right: 10px	
+			margin-right: 10px
+		&.is-open
+			+rotate(90)		
 	   
 		
 .header__nav
@@ -259,11 +262,14 @@ i.icon-back
 				.is-atbottom &
 					&:after
 						top: 0	 
-				&:hover, &.is-active
+				&:hover
+					opacity: 1
+					background: #06202f 
+				&.is-active
 					opacity: 1
 					background: #06202f 
 					&:after
-						display: block			
+						display: block					
 	.mob-nav__socials
 		position: absolute
 		bottom: 22px
@@ -277,6 +283,9 @@ i.icon-back
 			a
 				color: rgba(#fff, 0.2)
 				font-size: 16px
+				+tr(color 200ms)
+				&:hover
+					color: #fff
 			
 .header__contact
 	float: right 
@@ -506,17 +515,18 @@ i.icon-back
 			a
 				border-radius: 0 4px 4px 0	
 		a
-			width: 99% 
+ 
 			display: block
 			padding: 15px 0 15px 18% 
-			background-color: rgba(#FFF, .1) 
+			background: rgba(#FFF, .1)
+			margin-left: 1px
 			color: #FFF 
-			+box-sizing(border-box)
-			+transition(.2s)
+			+box
+			+tr(background .2s)
 			&:hover
-				background-color: rgba(#c7f8ff, .3) 
-		&:last-child
-			margin-right: 0
+				background: rgba(#c7f8ff, .3) 
+		&:first-child
+			margin-left: 0
 	.fa
 		font-size: 26px 
 		vertical-align: bottom

@@ -70,6 +70,52 @@
 			margin-bottom: 14px 
 	.js-drop
 		+box
+	.greet__form_email
+		+box
+		width: 31%  
+		padding: 20px 15px 
+		+r(840)
+			display: block
+			width: 400px
+			margin: 0 auto 14px
+		+r(480)
+			width: 100%	
+	.greet__form_name
+		+box
+		width: 20% 
+		padding: 20px 15px 
+		+r(840)
+			display: block
+			width: 400px
+			margin: 0 auto 14px
+		+r(480)
+			width: 100%	 
+	.greet__submit 
+		+box
+		width: 10%  
+		padding: 0px 15px 
+		height: 55px 
+		margin: 0 3px 
+		opacity: 1 
+		background-color: #F7B30E
+		color: #fff
+		border-radius: 3px
+		-webkit-appearance: none
+		appearance: none
+		+os-l
+		font-size: 24px
+		+tr(background 200ms)
+		&:hover
+			background: #ffca4a  
+		+tablet
+			width: 11% 
+		+r(840)
+			display: block
+			width: 210px
+			margin: 0 auto 
+			padding: 0
+		+r(480)
+			width: 105px 		
 
 .dropdown
 	position: relative
@@ -79,6 +125,12 @@
 	+box
 	width: 31%
 	text-align: left
+	+r(840)
+		width: 400px
+		display: block
+		margin: 0 auto 14px 
+	+r(480)
+		width: 100% 	 
 	&.is-active
 		.dropdown__text
 			background: #fff
@@ -141,41 +193,6 @@
 		position: absolute
 		top: 0
 		visibility: hidden	 
-.greet__form_email
-	+box
-	width: 31%  
-	padding: 20px 15px 
-	+tablet
-		width: 32% 
-.greet__form_name
-	+box
-	width: 20% 
-	padding: 20px 15px 
-	+tablet
-		width: 22% 
-.greet__submit 
-	+box
-	width: 10%  
-	padding: 0px 15px 
-	height: 55px 
-	margin: 0 3px 
-	opacity: 1 
-	background-color: #F7B30E
-	color: #fff
-	border-radius: 3px
-	-webkit-appearance: none
-	appearance: none
-	+os-l
-	font-size: 24px
-	+tr(background 200ms)
-	&:hover
-		background: #ffca4a  
-	+tablet
-		width: 11% 
-	+r(840)
-		display: block
-		width: 100%
-		padding: 0
 
 //----- about		
 
@@ -206,7 +223,7 @@
 	& > img
 		width: 52% 
 		float: right
-		margin-left: 1%
+		margin-left: 40px
 		+r(600)
 			width: 100%
 			margin-left: 0
@@ -242,8 +259,10 @@
 		background: #FCF5E4
 		border-color: rgba(black, .6)
 		opacity: .6
+	+r(1366)
+		padding: 4% 4% 4% 5% 	
 	+r(1024)
-		border: none
+		border: 1px solid transparent
 		&:hover
 			background: transparent
 			border-color: transparent
@@ -255,28 +274,28 @@
 		display: block
 		+clr
 		i
-			float: left
+			display: inline-block
+			vertical-align: middle
 			padding-right: 8% 
 		span
 			display: inline-block
+			vertical-align: middle
 			line-height: 1.2em 
 	.services__item_text
 		+os
 		font-size: 16px 
 		margin-top: 15px 
-	+r(1024)
+	+r(1366)
 		.services__item_header
-			font-size: 26px	
+			font-size: 22px
+	+r(1023)
+		.services__item_header 
+			font-size: 18px			
 	+r(767)
 		display: block
 		width: 100% 
 		.services__item_header
-			text-align: center
-			i
-				float: none
-				display: block
-				margin: 0 auto
-				padding-right: 0 
+			font-size: 20px
 		
 
 //----- price
@@ -305,7 +324,7 @@
 		background: #fff 
 		&:last-child
 			margin-right: 0
-		+r(1024)
+		+r(1200)
 			width: 31%
 			margin-right: -5px
 			&.table--orange
@@ -346,12 +365,16 @@
 		.table__features
 			+os-l
 			font-size: 16px
-			margin: 38px 0 31px percentage(41px / 308px) 
+			margin: 38px percentage(41px / 308px) 31px  
 			li
-				line-height: 2em   
+				position: relative
+				line-height: 1.8
+				padding-left: 14px
 			li:before
 				content: ''
-				display: inline-block
+				position: absolute
+				top: 11px
+				left: 0
 				width: 5px
 				height: 5px
 				margin-right: 7px 
@@ -376,8 +399,9 @@
 		margin: 0 auto  
 		+os
 		font-size: 26px  
-		+border-radius(3px)
-		
+		border-radius: 3px
+		+r(1280)
+			font-size: 22px
 .table--gray
 	+box-shadow(0 0 0 1px #e5e5e5 inset)
 	margin-top: 24px 

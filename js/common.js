@@ -9,9 +9,10 @@ head.ready(function() {
 		}
 	});
 	$('.js-nav-toggle').click(function(){
-			$('html').toggleClass('is-menu');
-			$('body').toggleClass('is-menu');
-			$('.mob-nav').toggleClass('is-open');
+		$(this).toggleClass('is-open');
+		$('html').toggleClass('is-menu');
+		$('body').toggleClass('is-menu');
+		$('.mob-nav').toggleClass('is-open');
 	});
 
 	function stickyHeader(){

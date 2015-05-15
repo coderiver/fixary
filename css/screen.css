@@ -85,11 +85,12 @@ i.icon-back { background: url('../img/icons-sfa932d36db.png') 0 -188px no-repeat
 .header .header__in { padding: 0 30px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *zoom: 1; }
 .header .header__in:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 767px) { .header .header__in { padding: 0 10px; } }
-.header .humb { width: 30px; display: none; margin-top: 27px; cursor: pointer; float: left; margin-right: 20px; }
+.header .humb { width: 30px; display: none; margin-top: 27px; cursor: pointer; float: left; margin-right: 20px; -moz-transition: -moz-transform 300ms; -o-transition: -o-transform 300ms; -webkit-transition: -webkit-transform 300ms; transition: transform 300ms; }
 .header .humb > div { width: 100%; height: 2px; background-color: #FFF; }
 .header .humb > div:nth-child(2) { margin: 7px 0; }
 @media only screen and (max-width: 1255px) { .header .humb { display: block; } }
 @media only screen and (max-width: 660px) { .header .humb { margin-top: 25px; margin-right: 10px; } }
+.header .humb.is-open { -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(90deg); }
 
 .header__nav { float: left; }
 .header__nav ul.nav__link { *zoom: 1; width: 100%; margin-left: 28px; }
@@ -112,11 +113,13 @@ i.icon-back { background: url('../img/icons-sfa932d36db.png') 0 -188px no-repeat
 .mob-nav .mob-nav__link li a { display: block; padding: 22px 10px 22px 20px; font-size: 20px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; opacity: 0.5; position: relative; color: #fff; transition: 0.2s; }
 .mob-nav .mob-nav__link li a:after { content: ""; display: none; position: absolute; top: 0; left: 0; bottom: 0; width: 2px; background: #fff; -moz-transition: top 200ms; -o-transition: top 200ms; -webkit-transition: top 200ms; transition: top 200ms; }
 .is-atbottom .mob-nav .mob-nav__link li a:after { top: 0; }
-.mob-nav .mob-nav__link li a:hover, .mob-nav .mob-nav__link li a.is-active { opacity: 1; background: #06202f; }
-.mob-nav .mob-nav__link li a:hover:after, .mob-nav .mob-nav__link li a.is-active:after { display: block; }
+.mob-nav .mob-nav__link li a:hover { opacity: 1; background: #06202f; }
+.mob-nav .mob-nav__link li a.is-active { opacity: 1; background: #06202f; }
+.mob-nav .mob-nav__link li a.is-active:after { display: block; }
 .mob-nav .mob-nav__socials { position: absolute; bottom: 22px; right: 0; left: 0; text-align: center; }
 .mob-nav .mob-nav__socials li { display: inline-block; vertical-align: middle; margin: 0 10px; }
-.mob-nav .mob-nav__socials li a { color: rgba(255, 255, 255, 0.2); font-size: 16px; }
+.mob-nav .mob-nav__socials li a { color: rgba(255, 255, 255, 0.2); font-size: 16px; -moz-transition: color 200ms; -o-transition: color 200ms; -webkit-transition: color 200ms; transition: color 200ms; }
+.mob-nav .mob-nav__socials li a:hover { color: #fff; }
 
 .header__contact { float: right; text-align: right; white-space: nowrap; }
 .header__contact li { padding: 22px 0 0 0; display: inline-block; vertical-align: top; margin-right: 40px; -moz-transition: padding 300ms; -o-transition: padding 300ms; -webkit-transition: padding 300ms; transition: padding 300ms; }
@@ -194,9 +197,9 @@ i.icon-back { background: url('../img/icons-sfa932d36db.png') 0 -188px no-repeat
 @media only screen and (max-width: 568px) { .footer__social li { text-align: center; } }
 .footer__social li:first-child a { border-radius: 4px 0 0 4px; }
 .footer__social li:last-child a { border-radius: 0 4px 4px 0; }
-.footer__social li a { width: 99%; display: block; padding: 15px 0 15px 18%; background-color: rgba(255, 255, 255, 0.1); color: #FFF; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; transition: 0.2s; }
-.footer__social li a:hover { background-color: rgba(199, 248, 255, 0.3); }
-.footer__social li:last-child { margin-right: 0; }
+.footer__social li a { display: block; padding: 15px 0 15px 18%; background: rgba(255, 255, 255, 0.1); margin-left: 1px; color: #FFF; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-transition: background 0.2s; -o-transition: background 0.2s; -webkit-transition: background 0.2s; transition: background 0.2s; }
+.footer__social li a:hover { background: rgba(199, 248, 255, 0.3); }
+.footer__social li:first-child { margin-left: 0; }
 .footer__social .fa { font-size: 26px; vertical-align: bottom; padding-right: 16%; }
 .footer__social span { font-size: 19px; opacity: 0.6; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; }
 @media only screen and (max-width: 568px) { .footer__social span { display: none; } }
@@ -244,8 +247,21 @@ i.icon-back { background: url('../img/icons-sfa932d36db.png') 0 -188px no-repeat
 @media only screen and (max-width: 1024px) { .greet__form .greet__form_item { font-size: 18px; } }
 @media only screen and (max-width: 800px) { .greet__form .greet__form_item { width: 100%; margin-bottom: 14px; } }
 .greet__form .js-drop { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.greet__form .greet__form_email { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 31%; padding: 20px 15px; }
+@media only screen and (max-width: 840px) { .greet__form .greet__form_email { display: block; width: 400px; margin: 0 auto 14px; } }
+@media only screen and (max-width: 480px) { .greet__form .greet__form_email { width: 100%; } }
+.greet__form .greet__form_name { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 20%; padding: 20px 15px; }
+@media only screen and (max-width: 840px) { .greet__form .greet__form_name { display: block; width: 400px; margin: 0 auto 14px; } }
+@media only screen and (max-width: 480px) { .greet__form .greet__form_name { width: 100%; } }
+.greet__form .greet__submit { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 10%; padding: 0px 15px; height: 55px; margin: 0 3px; opacity: 1; background-color: #F7B30E; color: #fff; border-radius: 3px; -webkit-appearance: none; appearance: none; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 24px; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
+.greet__form .greet__submit:hover { background: #ffca4a; }
+@media only screen and (max-width: 1024px) { .greet__form .greet__submit { width: 11%; } }
+@media only screen and (max-width: 840px) { .greet__form .greet__submit { display: block; width: 210px; margin: 0 auto; padding: 0; } }
+@media only screen and (max-width: 480px) { .greet__form .greet__submit { width: 105px; } }
 
 .dropdown { position: relative; display: inline-block; vertical-align: top; margin-right: 3px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 31%; text-align: left; }
+@media only screen and (max-width: 840px) { .dropdown { width: 400px; display: block; margin: 0 auto 14px; } }
+@media only screen and (max-width: 480px) { .dropdown { width: 100%; } }
 .dropdown.is-active .dropdown__text { background: #fff; }
 .dropdown.is-active .dropdown__text:hover { background: #fff; }
 .dropdown .dropdown__text { position: relative; display: block; height: 55px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 40px 0 20px; line-height: 55px; border-radius: 3px; background: rgba(255, 255, 255, 0.3); font-size: 24px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; color: #001d34; cursor: pointer; }
@@ -258,17 +274,6 @@ i.icon-back { background: url('../img/icons-sfa932d36db.png') 0 -188px no-repeat
 .dropdown .input:hover { background: #fff; }
 .dropdown select { position: absolute; top: 0; visibility: hidden; }
 
-.greet__form_email { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 31%; padding: 20px 15px; }
-@media only screen and (max-width: 1024px) { .greet__form_email { width: 32%; } }
-
-.greet__form_name { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 20%; padding: 20px 15px; }
-@media only screen and (max-width: 1024px) { .greet__form_name { width: 22%; } }
-
-.greet__submit { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 10%; padding: 0px 15px; height: 55px; margin: 0 3px; opacity: 1; background-color: #F7B30E; color: #fff; border-radius: 3px; -webkit-appearance: none; appearance: none; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 24px; -moz-transition: background 200ms; -o-transition: background 200ms; -webkit-transition: background 200ms; transition: background 200ms; }
-.greet__submit:hover { background: #ffca4a; }
-@media only screen and (max-width: 1024px) { .greet__submit { width: 11%; } }
-@media only screen and (max-width: 840px) { .greet__submit { display: block; width: 100%; padding: 0; } }
-
 .about { width: 100%; padding-bottom: 155px; }
 .about .block_header { padding: 88px 0 66px; }
 @media only screen and (max-width: 700px) { .about { padding-bottom: 50px; }
@@ -279,7 +284,7 @@ i.icon-back { background: url('../img/icons-sfa932d36db.png') 0 -188px no-repeat
 .about__content p { padding-bottom: 40px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 19px; line-height: 1.57em; position: relative; z-index: 2; }
 .about__content p:last-child { padding-bottom: 0; }
 @media only screen and (max-width: 768px) { .about__content p { font-size: 18px; } }
-.about__content > img { width: 52%; float: right; margin-left: 1%; }
+.about__content > img { width: 52%; float: right; margin-left: 40px; }
 @media only screen and (max-width: 600px) { .about__content > img { width: 100%; margin-left: 0; float: none; } }
 @media only screen and (max-width: 600px) { .about__content { margin: 0 20px; } }
 
@@ -292,17 +297,18 @@ i.icon-back { background: url('../img/icons-sfa932d36db.png') 0 -188px no-repeat
 
 .services__item { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 5% 5% 5% 7%; border-radius: 4px; width: 50%; vertical-align: top; cursor: pointer; background: transparent; border: 1px solid transparent; -moz-transition: opacity 200ms, border-color 200ms, background 200ms; -o-transition: opacity 200ms, border-color 200ms, background 200ms; -webkit-transition: opacity 200ms, border-color 200ms, background 200ms; transition: opacity 200ms, border-color 200ms, background 200ms; }
 .services__item:hover { background: #FCF5E4; border-color: rgba(0, 0, 0, 0.6); opacity: 0.6; }
-@media only screen and (max-width: 1024px) { .services__item { border: none; }
+@media only screen and (max-width: 1366px) { .services__item { padding: 4% 4% 4% 5%; } }
+@media only screen and (max-width: 1024px) { .services__item { border: 1px solid transparent; }
   .services__item:hover { background: transparent; border-color: transparent; opacity: 1; } }
 .services__item .services__item_header { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 28px; vertical-align: top; display: block; *zoom: 1; }
 .services__item .services__item_header:after { content: " "; display: table; clear: both; }
-.services__item .services__item_header i { float: left; padding-right: 8%; }
-.services__item .services__item_header span { display: inline-block; line-height: 1.2em; }
+.services__item .services__item_header i { display: inline-block; vertical-align: middle; padding-right: 8%; }
+.services__item .services__item_header span { display: inline-block; vertical-align: middle; line-height: 1.2em; }
 .services__item .services__item_text { font-family: "Open Sans", Arial, sans-serif; font-size: 16px; margin-top: 15px; }
-@media only screen and (max-width: 1024px) { .services__item .services__item_header { font-size: 26px; } }
+@media only screen and (max-width: 1366px) { .services__item .services__item_header { font-size: 22px; } }
+@media only screen and (max-width: 1023px) { .services__item .services__item_header { font-size: 18px; } }
 @media only screen and (max-width: 767px) { .services__item { display: block; width: 100%; }
-  .services__item .services__item_header { text-align: center; }
-  .services__item .services__item_header i { float: none; display: block; margin: 0 auto; padding-right: 0; } }
+  .services__item .services__item_header { font-size: 20px; } }
 
 .pricing { padding-bottom: 100px; }
 .pricing .block_header { padding: 127px 0 100px; }
@@ -313,7 +319,7 @@ i.icon-back { background: url('../img/icons-sfa932d36db.png') 0 -188px no-repeat
 .pricing__content:after { content: " "; display: table; clear: both; }
 .pricing__content .table { position: relative; width: 30%; vertical-align: top; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; padding-bottom: 46px; display: inline-block; margin-right: 5%; background: #fff; }
 .pricing__content .table:last-child { margin-right: 0; }
-@media only screen and (max-width: 1024px) { .pricing__content .table { width: 31%; margin-right: -5px; }
+@media only screen and (max-width: 1200px) { .pricing__content .table { width: 31%; margin-right: -5px; }
   .pricing__content .table.table--orange { width: 38%; }
   .pricing__content .table:last-child { margin-right: 0; } }
 @media only screen and (max-width: 767px) { .pricing__content .table { width: 100%; display: block; margin-bottom: 30px; }
@@ -325,13 +331,14 @@ i.icon-back { background: url('../img/icons-sfa932d36db.png') 0 -188px no-repeat
 .pricing__content .table__header .table__price sup { font-size: 0.4em; vertical-align: top; display: inline-block; margin-top: 0.5em; opacity: 0.7; }
 .pricing__content .table__header .table__price_about { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 24px; }
 .pricing__content .table__header .table__price_about b { font-family: "Open Sans", Arial, sans-serif; font-weight: 600; }
-.pricing__content .table__content .table__features { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 16px; margin: 38px 0 31px 13.31169%; }
-.pricing__content .table__content .table__features li { line-height: 2em; }
-.pricing__content .table__content .table__features li:before { content: ""; display: inline-block; width: 5px; height: 5px; margin-right: 7px; vertical-align: middle; background-color: #b3b3b3; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.pricing__content .table__content .table__features { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 16px; margin: 38px 13.31169% 31px; }
+.pricing__content .table__content .table__features li { position: relative; line-height: 1.8; padding-left: 14px; }
+.pricing__content .table__content .table__features li:before { content: ""; position: absolute; top: 11px; left: 0; width: 5px; height: 5px; margin-right: 7px; vertical-align: middle; background-color: #b3b3b3; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 @media only screen and (max-width: 767px) { .pricing__content .table__content .table__features { display: none; } }
 .pricing__content .table__content .table__about { display: none; padding: 38px 0 31px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; color: #000; text-align: center; font-size: 16px; }
 @media only screen and (max-width: 767px) { .pricing__content .table__content .table__about { display: block; } }
-.pricing__content .table__btn { display: block; width: 74.67532%; height: 65px; margin: 0 auto; font-family: "Open Sans", Arial, sans-serif; font-size: 26px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.pricing__content .table__btn { display: block; width: 74.67532%; height: 65px; margin: 0 auto; font-family: "Open Sans", Arial, sans-serif; font-size: 26px; border-radius: 3px; }
+@media only screen and (max-width: 1280px) { .pricing__content .table__btn { font-size: 22px; } }
 
 .table--gray { -moz-box-shadow: 0 0 0 1px #e5e5e5 inset; -webkit-box-shadow: 0 0 0 1px #e5e5e5 inset; box-shadow: 0 0 0 1px #e5e5e5 inset; margin-top: 24px; }
 .table--gray .table__header_number { background-color: #f7f7f7; }
