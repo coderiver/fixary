@@ -78,16 +78,22 @@
 	+box
 	width: 31%
 	text-align: left
+	&.is-active
+		.dropdown__text
+			background: #fff
+			&:hover
+				background: #fff 
 	.dropdown__text
 		position: relative
 		display: block
 		height: 55px
 		+box
-		padding: 0 20px
+		padding: 0 40px 0 20px
 		line-height: 55px 
 		border-radius: 3px
 		background: rgba(255, 255, 255, 0.3)
 		font-size: 24px
+		+text-overflow
 		+os-l
 		color: #001d34
 		cursor: pointer
@@ -102,16 +108,33 @@
 		&:hover
 			background: rgba(255, 255, 255, 0.7)
 	.dropdown__list
+		display: none
 		position: absolute
 		top: 59px
 		left: 0
 		right: 0
-		background: rgba(255, 255, 255, 0.7) 
+		border-radius: 3px
+		overflow: hidden
 		li
 			padding: 0 20px 
 			line-height: 42px 
 			font-size: 20px
-			color: #001d34			
+			color: #001d34
+			+os-l
+			background: rgba(255, 255, 255, 0.7)
+			cursor: pointer
+			&:hover
+				background: rgba(255, 255, 255, 0.5)
+	.input
+		display: none
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 55px
+		background: #fff
+		&:hover
+			background: #fff  			  			
 	select
 		position: absolute
 		top: 0

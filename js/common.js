@@ -31,9 +31,6 @@ head.ready(function() {
 		stickyHeader();
 	});
 
-	$('.dropdown,dropdown__menu').click(function(event) {
-		$(this).toggleClass('is-active');
-	});
 
 	function visibility(){
 			var window_top = $(window).scrollTop();
@@ -128,6 +125,65 @@ head.ready(function() {
 		
 	});
 
+	// dropdown
+	$.fn.hasAttr = function(name) {
+	   return this.attr(name) !== undefined;
+	};
+
+	$(document).click(function() {
+        $(".js-dropdown").removeClass("is-active");
+	    $(".js-dropdown-list").slideUp(100);
+	    $('.js-dropdown-input').hide();
+    });
+	    
+	$("body").on("click",".js-dropdown",function(event) {
+	    event.stopPropagation();
+	});
+    $("body").on("click",".js-dropdown-text",function(event) {
+    	var select = $(this).parents(".js-dropdown");
+        if (select.hasClass("is-active")) {
+            $(".js-dropdown").removeClass("is-active");
+            $(".js-dropdown-list").slideUp(100);
+        }
+        else {
+            $(".js-dropdown").removeClass("is-active");
+            $(".js-dropdown-list").slideUp(100);
+            select.toggleClass("is-active").find(".js-dropdown-list").slideToggle(100);
+        }
+       
+    });
+
+    $("body").on("click",".js-dropdown-list li",function() {
+        var val = $(this).attr("data-val");
+        var text = $(this).text();
+        var select = $(this).parents(".js-dropdown");
+        var selectList = $(this).parents(".js-dropdown-list");
+        
+        if($(this).hasAttr('data-input')){
+        	select.find('.js-dropdown-input').show().focus();
+        	selectList.slideUp(100);
+        }
+        else {
+        	select.find(".js-dropdown-text").text(text);
+        	select.find("option").removeAttr("selected");
+        	select.find('option[value="'+val+'"]').attr("selected", "selected");
+        	selectList.find("li").removeClass("is-active");
+        	$(this).addClass("is-active");
+        	select.removeClass("is-active");
+        	selectList.slideUp(100);
+        }
+
+        return false;
+        
+    });
+
+    $('.js-dropdown-input').on('blur', function(){
+    	var val = $(this).val();
+    	$(this).parents('.js-dropdown').find('.js-dropdown-text').text(val);
+    	$(this).parents('.js-dropdown').find('select option:last-child').attr('value', val);
+    });
+
+	// window scroll events
 	$(window).scroll(function(){
 		scrollNav();
 	});
