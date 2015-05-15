@@ -256,7 +256,7 @@
 	border: 1px solid transparent
 	+transition(opacity 200ms, border-color 200ms, background 200ms)
 	&:hover
-		background: #FCF5E4
+		//background: #FCF5E4
 		border-color: rgba(black, .6)
 		opacity: .6
 	+r(1366)
@@ -520,7 +520,16 @@
 			left: 50%
 			bottom: -29px
 			max-width: 100%
-			+translate(-50%, 0)	
+			+translate(-50%, 0)
+			+r(568)
+				width: 420px
+				bottom: -21px
+			+r(480)
+				width: 320px
+				bottom: -16px
+			+r(360)
+				width: 280px
+				bottom: -14px 	
 	.block_header
 		padding: 85px 0 95px
 		+r(767)
@@ -578,13 +587,21 @@
 		position: relative
 		z-index: 2 
 	.footer
-		margin-top: 708px 
+		margin-top: 708px
+	+r(767)
+		background: none
+		.block_header
+			display: none
+		.footer
+			margin-top: 50px	 	 
 .work__content
 	position: absolute
 	width: 1440px
 	left: 50%
 	+translate(-50%,0) 
 	+clr
+	+r(767)
+		display: none
 .location
 	position: relative
 	max-width: 420px 
@@ -596,13 +613,13 @@
 	.location__dot
 		position: absolute
 		top: 11px
-		+translate(-50%,0)
+		margin-left: -9px
 		width: 18px  
 		height: 18px
 		border-radius: 50%
 		cursor: pointer
 		background: rgba(#FFF, .2)
-		+transition(.2s ease-in-out)
+		+transition( transform .2s ease-in-out)
 		&:before
 			content: ""
 			position: absolute
@@ -614,12 +631,7 @@
 			background: rgba(#FFF, .9)
 			+transition(.2s ease-in-out) 
 		&:hover
-			width: 20px  
-			height: 20px
-			top: 10px
-			&:before
-				width: 10px
-				height: 10px
+			+scale(1.2)
 
 .location--1
 	top: 243px 
