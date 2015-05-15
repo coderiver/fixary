@@ -41,7 +41,7 @@
 	font-size: 0 
 	padding-top: 40px  
 	
-	.greet__form_item, .dropdown input
+	.greet__form_item
 		display: inline-block
 		vertical-align: top
 		font-size: 24px 
@@ -51,7 +51,6 @@
 		+os-l
 		+border-radius(3px)  
 		background-color: rgba(#fff,.3)
-		margin: 0 3px 
 		color: #001C33 
 		text-align: left
 		+placeholder-color(#001C33)
@@ -63,78 +62,74 @@
 		&.filled
 			opacity: 1	
 		+r(1024)
-			font-size: 18px	
-	.dropdown
-		padding: 0  
-		input
-			+placeholder-color(#001C33)
-			color: #001C33
-			width: 100% 
-			margin: 0
-			background: transparent
-			&:hover
-				background: transparent 
-			 
+			font-size: 18px
 	.greet__form_item
 		+r(800)
 			width: 100%
 			margin-bottom: 14px 
 	.js-drop
-		+box-sizing(border-box)
+		+box
 
 .dropdown
-	width: 26%
-	width: 31%  
-	border: 0px
-	outline: none
-	+appearance(none)
-	appearance: none
-	cursor: pointer
-	.dropdown__arr
+	position: relative
+	display: inline-block
+	vertical-align: top
+	margin-right: 3px
+	+box
+	width: 31%
+	text-align: left
+	.dropdown__text
+		position: relative
+		display: block
+		height: 55px
+		+box
+		padding: 0 20px
+		line-height: 55px 
+		border-radius: 3px
+		background: rgba(255, 255, 255, 0.3)
+		font-size: 24px
+		+os-l
+		color: #001d34
+		cursor: pointer
+		&:before
+			content: ""
+			position: absolute
+			top: 22px
+			right: 18px
+			width: 21px
+			height: 11px
+			+svgi(drop_arr, 21, 11)
+		&:hover
+			background: rgba(255, 255, 255, 0.7)
+	.dropdown__list
 		position: absolute
-		top: 50%
-		right: 19px
-		width: 21px
-		height: 21px
-		+transform(translateY(-50%))
-		img
-			width: 100%
-			height: 100%
-	&.is-active
-		background: #fff
-		&:hover
-			background: #fff  
-	option
-		background-color: #FFF 
-		opacity: .6
-		&:hover
-			opacity: .8
-	+tablet
-		width: 32% 
-	+r(840)
-		width: 100%
-		display: none
-
-		
-
-
+		top: 59px
+		left: 0
+		right: 0
+		background: rgba(255, 255, 255, 0.7) 
+		li
+			padding: 0 20px 
+			line-height: 42px 
+			font-size: 20px
+			color: #001d34			
+	select
+		position: absolute
+		top: 0
+		visibility: hidden	 
 .greet__form_email
-	+box-sizing(border-box)
-	width: 22% 
-	width: 26%  
+	+box
+	width: 31%  
 	padding: 20px 15px 
 	+tablet
 		width: 32% 
 .greet__form_name
-	+box-sizing(border-box)
-	width: 16% 
+	+box
 	width: 20% 
 	padding: 20px 15px 
 	+tablet
 		width: 22% 
 .greet__submit 
 	+box
-	width: 8%
 	width: 10%  
 	padding: 0px 15px 
 	height: 55px 
@@ -155,25 +150,7 @@
 	+r(840)
 		display: block
 		width: 100%
-		padding: 0  
-.dropdown
-	position: relative
-.dropdown__menu
-	position: absolute
-	background: #B4C0C6
-	left: 0
-	border-radius: 3px
-	right: 0   
-	top: 60px 
-	display: none
-	.is-active &
-		display: block
-	li
-		padding: 6px 15px
-		font-size: 20px 
-		color: #001C33 
-		&:hover
-			background: #92A4AA 
+		padding: 0
 
 //----- about		
 
