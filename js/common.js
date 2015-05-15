@@ -84,12 +84,17 @@ head.ready(function() {
 	});
 
 	$('.logo').on('click', function(){
-		$('html, body').animate({
-			scrollTop: 0
-		}, 500, function(){
-			$('.nav__link a').removeClass('is-active');
-		});
-		return false;
+		if($(this).is('div')){
+			document.location.href="/";
+		}
+		else{
+			$('html, body').animate({
+				scrollTop: 0
+			}, 500, function(){
+				$('.nav__link a').removeClass('is-active');
+			});
+			return false;
+		}
 	});
 
 	// location tooltips
