@@ -21,7 +21,12 @@
     background: #fff
     border-radius: 5px
     &.popup_small
-        max-width: 700px 
+        max-width: 700px
+    +r(568)
+        padding: 48px 32px
+    .popup__in
+        +r(568)
+            padding-bottom: 80px     
     .popup__close
         position: absolute
         top: 10px
@@ -70,6 +75,12 @@
         a
             font-size: 16px
             color: #001d34
+        +r(568)
+            position: absolute
+            bottom: 40px
+            left: 0
+            right: 0
+            margin-left: 0    
     .popup__text
         +os-l
         font-size: 20px
@@ -102,6 +113,8 @@
         display: inline-block
         vertical-align: top
         margin-left: 17px
+        +r(568)
+            width: 100% 
         &.form__col-long
             width: 440px
         &:first-child
@@ -143,7 +156,9 @@
             font-size: 0
     &.error
         border: 1px solid #ffeeec
-        background: #ffeeec          
+        background: #ffeeec
+    +r(568)
+        font-size: 15px             
 .checkbox
     position: relative
     &:hover
@@ -205,7 +220,9 @@
     &.button_big
         width: auto
         max-width: 100%
-        padding: 0 48px 
+        padding: 0 48px
+    +r(568)
+        font-size: 21px    
 .password
     position: relative
     .password__switch

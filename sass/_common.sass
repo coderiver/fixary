@@ -323,13 +323,28 @@ i.icon-back
 				font-size: 0
 	.call
 		.icon-phone
-			+animation()
+			+animation(call 4s linear infinite)
 		+r(660)
 			margin-right: 5px
 			i
 				display: none
 			a
 				font-size: 16px
++keyframes(call)
+	0%
+		+rotate(0)
+	8%
+		+rotate(-13)
+	16%
+		+rotate(0)
+	24%
+		+rotate(-13)
+	32%
+		+rotate(0)
+	40%
+		+rotate(-13)
+	50%
+		+rotate(0)								
 .tooltip
 	position: absolute
 	top: 75px
