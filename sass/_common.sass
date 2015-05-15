@@ -447,15 +447,25 @@ i.icon-back
 	.btn, .edit
 		float: right
 .header__logo
-	float: left
+	float: left 
 	margin-top: 12px
 	+r(660)
 		margin-top: 20px  
 .logo
 	cursor: pointer
 	+s(logo)
+	+retina
+		background: url(../img/logo2.png) no-repeat
+		-webkit-background-size: contain 
+		-o-background-size: contain 
+		background-size: contain  
 	+r(660)
-		+s(logo-small)
+		// +s(logo-small)
+		width: 109px 
+		background: url(../img/logo2.png) no-repeat
+		-webkit-background-size: contain 
+		-o-background-size: contain 
+		background-size: contain  
 .logo--big
 	+s(logo--big)
 

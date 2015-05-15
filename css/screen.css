@@ -201,7 +201,8 @@ i.icon-back { background: url('../img/icons-sfa932d36db.png') 0 -188px no-repeat
 @media only screen and (max-width: 660px) { .header__logo { margin-top: 20px; } }
 
 .logo { cursor: pointer; background: url('../img/icons-sfa932d36db.png') 0 -910px no-repeat; width: 164px; height: 40px; }
-@media only screen and (max-width: 660px) { .logo { background: url('../img/icons-sfa932d36db.png') 0 -875px no-repeat; width: 104px; height: 25px; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) { .logo { background: url(../img/logo2.png) no-repeat; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; } }
+@media only screen and (max-width: 660px) { .logo { background: url('../img/icons-sfa932d36db.png') 0 -875px no-repeat; width: 104px; height: 25px; width: 109px; background: url(../img/logo2.png) no-repeat; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; } }
 
 .logo--big { background: url('../img/icons-sfa932d36db.png') 0 -807px no-repeat; width: 241px; height: 58px; }
 
