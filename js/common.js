@@ -71,14 +71,14 @@ head.ready(function() {
 	$('.nav__link a').on('click', function(){
 		var section = $(this).attr('href');
 		$('html, body').animate({
-			scrollTop: $(section).offset().top
+			scrollTop: $(section).offset().top - 68
 		}, 500);
 		return false;
 	});
 	$('.mob-nav__link a').on('click', function(){
 		var section = $(this).attr('href');
 		$('html, body').animate({
-			scrollTop: $(section).offset().top
+			scrollTop: $(section).offset().top - 68
 		}, 500);
 		return false;
 	});
