@@ -126,7 +126,7 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 .header__contact li:first-child { padding-left: 0; }
 .header__contact li a { font-size: 22px; opacity: 0.5; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; white-space: nowrap; }
 .header__contact li a:hover { opacity: 1; transition: 0.2s; }
-.header__contact li i { padding-right: 14px; position: relative; top: 2px; }
+.header__contact li i { margin-right: 14px; position: relative; top: 2px; }
 @media only screen and (max-width: 660px) { .header__contact li { padding: 26px 0 0 0; }
   .header__contact li i { padding-right: 0; } }
 .header__contact .profile { position: relative; margin-right: 0; }
@@ -274,7 +274,7 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 .greet__text p { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 20px; padding-top: 10px; }
 
 .greet__form { font-size: 0; padding-top: 40px; }
-.greet__form .greet__form_item { display: inline-block; vertical-align: top; font-size: 24px; padding: 0px 15px; margin: 0 3px; height: 55px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background-color: rgba(255, 255, 255, 0.3); color: #001C33; text-align: left; }
+.greet__form .greet__form_item { display: inline-block; vertical-align: top; font-size: 24px; padding: 0px 15px; margin: 0 3px; height: 55px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background-color: rgba(255, 255, 255, 0.3); color: #001C33; color: #2c465a; text-align: left; }
 .greet__form .greet__form_item:-moz-placeholder, .greet__form .greet__form_item::-moz-placeholder { color: #001C33; opacity: 1; }
 .greet__form .greet__form_item::-webkit-input-placeholder { color: #001C33; }
 .greet__form .greet__form_item:hover { background-color: rgba(255, 255, 255, 0.6); }
@@ -332,7 +332,7 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 @media only screen and (max-width: 1024px) { .services__content { width: 85%; } }
 
 .services__item { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 5% 5% 5% 7%; border-radius: 4px; width: 50%; vertical-align: top; cursor: pointer; background: transparent; border: 1px solid transparent; -moz-transition: opacity 200ms, border-color 200ms, background 200ms; -o-transition: opacity 200ms, border-color 200ms, background 200ms; -webkit-transition: opacity 200ms, border-color 200ms, background 200ms; transition: opacity 200ms, border-color 200ms, background 200ms; }
-.services__item:hover { border-color: rgba(0, 0, 0, 0.6); opacity: 0.6; }
+.services__item:hover { border-color: rgba(0, 0, 0, 0.3); opacity: 0.6; }
 @media only screen and (max-width: 1366px) { .services__item { padding: 4% 4% 4% 5%; } }
 @media only screen and (max-width: 1024px) { .services__item { border: 1px solid transparent; }
   .services__item:hover { background: transparent; border-color: transparent; opacity: 1; } }
