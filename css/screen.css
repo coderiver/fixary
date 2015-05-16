@@ -243,7 +243,8 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 .footer__link { margin-top: 50px; padding-bottom: 45px; }
 .footer__link ul { text-align: center; }
 .footer__link li { display: inline-block; text-align: center; margin: 0 20px; }
-.footer__link li:last-child a { color: #748c90; }
+.footer__link li:last-child { cursor: default; opacity: 1; }
+.footer__link li:last-child a { color: #748c90; opacity: 1; cursor: default; }
 @media only screen and (max-width: 568px) { .footer__link li:last-child { display: block; } }
 @media only screen and (max-width: 568px) { .footer__link li { margin: 0 10px 20px; }
   .footer__link li:last-child { margin: 0; } }
@@ -484,7 +485,7 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 .location__tooltip { position: absolute; max-width: inherit; top: -35px; z-index: 3; -moz-transform: translate(-50%, -100%); -ms-transform: translate(-50%, -100%); -webkit-transform: translate(-50%, -100%); transform: translate(-50%, -100%); opacity: 0; z-index: -10; transition: all 0.2s linear; -webkit-transition: all 0.2s linear; }
 .location__tooltip.is-active { z-index: 3; opacity: 1; top: -5px; }
 .location__tooltip:after { content: ""; display: block; width: 0px; height: 0px; border-style: solid; border-width: 5px 5px 0 5px; border-color: rgba(183, 202, 219, 0.45) transparent transparent transparent; position: absolute; bottom: -5px; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
-.location__tooltip .icon-close { position: absolute; top: 7px; right: 7px; opacity: 0.5; cursor: pointer; }
+.location__tooltip .icon-close { position: absolute; top: 7px; right: 7px; opacity: 1; cursor: pointer; }
 .location__tooltip .icon-close:hover { opacity: 1; }
 
 .comment { max-width: 420px; max-width: inherit; background-color: rgba(183, 202, 219, 0.45); -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 4% 4.5% 5.3%; color: #FFF; }
