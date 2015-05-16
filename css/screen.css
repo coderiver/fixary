@@ -368,8 +368,8 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 .pricing__content .table__header .table__price_about { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 24px; }
 .pricing__content .table__header .table__price_about b { font-family: "Open Sans", Arial, sans-serif; font-weight: 600; }
 .pricing__content .table__content .table__features { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 16px; margin: 38px 13.31169% 31px; }
-.pricing__content .table__content .table__features li { position: relative; line-height: 1.8; padding-left: 14px; }
-.pricing__content .table__content .table__features li:before { content: ""; position: absolute; top: 11px; left: 0; width: 5px; height: 5px; margin-right: 7px; vertical-align: middle; background-color: #b3b3b3; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.pricing__content .table__content .table__features li { position: relative; line-height: 1.2; padding-left: 14px; margin-bottom: 10px; }
+.pricing__content .table__content .table__features li:before { content: ""; position: absolute; top: 8px; left: 0; width: 5px; height: 5px; margin-right: 7px; vertical-align: middle; background-color: #b3b3b3; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 @media only screen and (max-width: 767px) { .pricing__content .table__content .table__features { display: none; } }
 .pricing__content .table__content .table__about { display: none; padding: 38px 0 31px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; color: #000; text-align: center; font-size: 16px; }
 @media only screen and (max-width: 767px) { .pricing__content .table__content .table__about { display: block; } }
