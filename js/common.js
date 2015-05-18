@@ -194,8 +194,14 @@ head.ready(function() {
 
     $('.js-dropdown-input').on('blur', function(){
     	var val = $(this).val();
-    	$(this).parents('.js-dropdown').find('.js-dropdown-text').text(val);
-    	$(this).parents('.js-dropdown').find('select option:last-child').attr('value', val);
+    	if (val == '') {
+    		$(this).parents('.js-dropdown').find('.js-dropdown-text').text('What can we help with?');
+    	}
+    	else {
+    		$(this).parents('.js-dropdown').find('.js-dropdown-text').text(val);
+    		$(this).parents('.js-dropdown').find('select option:last-child').attr('value', val);
+    	}
+    	
     });
 
 	// window scroll events
