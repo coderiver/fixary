@@ -1,5 +1,6 @@
 // styles for popups
 .overlay
+    visibility: hidden
     position: fixed
     top: 0
     bottom: 0
@@ -8,7 +9,15 @@
     overflow-y: auto
     +vertical
     background: rgba(#001a1e, 0.9)
+    opacity: 0
+    +tr(opacity 300ms) 
     z-index: 999
+    &.is-open
+        visibility: visible
+        opacity: 1 
+        .popup
+            +scale(1)
+            opacity: 1
 .popup
     position: relative
     display: inline-block 
@@ -20,6 +29,9 @@
     padding: 70px 50px 57px
     background: #fff
     border-radius: 5px
+    +scale(0.7)
+    opacity: 0 
+    +tr(all 300ms)
     &.popup_small
         max-width: 700px
     +r(568)

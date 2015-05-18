@@ -565,10 +565,12 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 .cap__footer p { letter-spacing: 1px; }
 .cap__footer a { color: #FFF; font-family: "Open Sans", Arial, sans-serif; font-weight: 700; }
 
-.overlay { position: fixed; top: 0; bottom: 0; right: 0; left: 0; overflow-y: auto; text-align: center; font-size: 0; background: rgba(0, 26, 30, 0.9); z-index: 999; }
+.overlay { visibility: hidden; position: fixed; top: 0; bottom: 0; right: 0; left: 0; overflow-y: auto; text-align: center; font-size: 0; background: rgba(0, 26, 30, 0.9); opacity: 0; -moz-transition: opacity 300ms; -o-transition: opacity 300ms; -webkit-transition: opacity 300ms; transition: opacity 300ms; z-index: 999; }
 .overlay:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.overlay.is-open { visibility: visible; opacity: 1; }
+.overlay.is-open .popup { -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
 
-.popup { position: relative; display: inline-block; vertical-align: middle; max-width: 900px; width: 90%; font-family: "Open Sans", Arial, sans-serif; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 70px 50px 57px; background: #fff; border-radius: 5px; }
+.popup { position: relative; display: inline-block; vertical-align: middle; max-width: 900px; width: 90%; font-family: "Open Sans", Arial, sans-serif; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 70px 50px 57px; background: #fff; border-radius: 5px; -ms-transform: scale(0.7); -webkit-transform: scale(0.7); transform: scale(0.7); opacity: 0; -moz-transition: all 300ms; -o-transition: all 300ms; -webkit-transition: all 300ms; transition: all 300ms; }
 .popup.popup_small { max-width: 700px; }
 @media only screen and (max-width: 568px) { .popup { padding: 48px 32px; } }
 @media only screen and (max-width: 568px) { .popup .popup__in { padding-bottom: 80px; } }
