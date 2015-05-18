@@ -196,6 +196,7 @@ head.ready(function() {
     	var val = $(this).val();
     	if (val == '') {
     		$(this).parents('.js-dropdown').find('.js-dropdown-text').text('What can we help with?');
+    		$('.js-dropdown-text').removeClass('is-selected');
     	}
     	else {
     		$(this).parents('.js-dropdown').find('.js-dropdown-text').text(val);
