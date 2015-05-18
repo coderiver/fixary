@@ -278,9 +278,9 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 .greet__text p { font-family: "Open Sans", Arial, sans-serif; font-weight: 300; font-size: 20px; padding-top: 10px; }
 
 .greet__form { font-size: 0; padding-top: 40px; }
-.greet__form .greet__form_item { display: inline-block; vertical-align: top; font-size: 24px; padding: 0px 15px; margin: 0 3px; height: 55px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background-color: rgba(255, 255, 255, 0.3); color: #001C33; color: #2c465a; text-align: left; }
-.greet__form .greet__form_item:-moz-placeholder, .greet__form .greet__form_item::-moz-placeholder { color: #001C33; opacity: 1; }
-.greet__form .greet__form_item::-webkit-input-placeholder { color: #001C33; }
+.greet__form .greet__form_item { display: inline-block; vertical-align: top; font-size: 24px; padding: 0px 15px; margin: 0 3px; height: 55px; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background-color: rgba(255, 255, 255, 0.3); color: #001C33; text-align: left; }
+.greet__form .greet__form_item:-moz-placeholder, .greet__form .greet__form_item::-moz-placeholder { color: #2c465a; opacity: 1; }
+.greet__form .greet__form_item::-webkit-input-placeholder { color: #2c465a; }
 .greet__form .greet__form_item:hover { background-color: rgba(255, 255, 255, 0.6); }
 .greet__form .greet__form_item:focus { opacity: 1; background-color: #fff; }
 .greet__form .greet__form_item.filled { opacity: 1; }
