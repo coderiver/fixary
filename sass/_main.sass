@@ -429,7 +429,9 @@
 			opacity: .7
 
 .pricing__footer
-	padding-top: 30px
+	padding: 30px 0 0
+	+r(1200)
+		padding: 30px 30px 0 0 
 	+r(767)
 		display: none
 	.pricing__footer_text
@@ -478,6 +480,7 @@
 	width: 85%
 	margin: 0 auto
 	.news__container_wrap
+		font-size: 0
 		margin: 0 -7% 0 -4% 
 		+clr 
 		padding-bottom: 85px
@@ -486,8 +489,9 @@
 .post
 	width: 33%
 	height: 210px 
-	float: left
-	+box-sizing(border-box)
+	display: inline-block
+	vertical-align: top
+	+box
 	padding: 0 3% 
 	+r(767)
 		width: 100% 
@@ -501,7 +505,13 @@
 		.post__heading_text 
 			+os-l
 			font-size: 28px 
-			margin-bottom: 5px 
+			margin-bottom: 5px
+			+r(1280)
+				font-size: 24px
+			+r(1024)
+				font-size: 18px
+			+r(767)
+				font-size: 24px		
 		time
 			+os-l
 			font-size: 15px 
@@ -537,14 +547,16 @@
 		+r(767)
 			padding: 50px 0 
 	.advantages__item
+		display: block
 		width: 50%
 		float: left
-		+box-sizing(border-box)
-		padding-right: 6%  
-		padding-bottom: 60px 
-		&:nth-of-type(2n)
-			padding-left: 6%  
-			padding-right: 0
+		+box
+		padding: 20px 3% 60px
+		border-radius: 4px
+		border: 1px solid transparent
+		cursor: pointer
+		&:hover
+			border-color: #e9eef1
 		+r(766)
 			width: 100%
 			padding-right: 0 

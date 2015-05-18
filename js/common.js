@@ -46,6 +46,12 @@ head.ready(function() {
 					$(this).addClass('animated');
 				}
 			});
+
+			var tooltip_position = $('.js-location-start').offset().top;
+			if(start_visibility >= tooltip_position){
+				$('.js-location-start').find('.location__tooltip').addClass('is-active');
+			}
+
 		}
 		visibility();
 		$(window).scroll(function(){
