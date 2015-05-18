@@ -304,9 +304,10 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 @media only screen and (max-width: 480px) { .dropdown { width: 100%; } }
 .dropdown.is-active .dropdown__text { background: #fff; }
 .dropdown.is-active .dropdown__text:hover { background: #fff; }
-.dropdown .dropdown__text { position: relative; display: block; height: 55px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 40px 0 20px; line-height: 55px; border-radius: 3px; background: rgba(255, 255, 255, 0.3); font-size: 24px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; color: #001d34; cursor: pointer; }
+.dropdown .dropdown__text { position: relative; display: block; height: 55px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 40px 0 20px; line-height: 55px; border-radius: 3px; background: rgba(255, 255, 255, 0.3); font-size: 24px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; color: #2c465a; cursor: pointer; }
 .dropdown .dropdown__text:before { content: ""; position: absolute; top: 22px; right: 18px; width: 21px; height: 11px; background: url("../img/icons/drop_arr.svg") no-repeat 0 0; -moz-background-size: 21px 11px; -o-background-size: 21px 11px; -webkit-background-size: 21px 11px; background-size: 21px 11px; }
 .dropdown .dropdown__text:hover { background: rgba(255, 255, 255, 0.7); }
+.dropdown .dropdown__text.is-selected { color: #001d34; }
 .dropdown .dropdown__list { display: none; position: absolute; top: 59px; left: 0; right: 0; border-radius: 3px; overflow: hidden; }
 .dropdown .dropdown__list li { padding: 0 20px; line-height: 42px; font-size: 20px; color: #001d34; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; background: #b4c2c6; cursor: pointer; }
 .dropdown .dropdown__list li:hover { background: #91a4ab; }

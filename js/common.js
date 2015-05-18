@@ -187,6 +187,7 @@ head.ready(function() {
         	selectList.slideUp(100);
         }
 
+        $('.js-dropdown-text').addClass('is-selected');
         return false;
         
     });
