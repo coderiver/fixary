@@ -331,9 +331,9 @@ i.icon-back
 		+r(660)
 			margin-right: 5px
 			i
-				display: none
+				//display: none
 			a
-				font-size: 16px
+				font-size: 0px
 +keyframes(call)
 	0%
 		+rotate(0)
@@ -633,3 +633,12 @@ i.icon-back
 	z-index: 2
 .is-menu .out
 	+translate(220px,0)
+
+// preloader
+#nanobar
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	height: 12px
+	z-index: 9999	

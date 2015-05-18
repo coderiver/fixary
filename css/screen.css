@@ -133,8 +133,7 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 @media only screen and (max-width: 660px) { .header__contact .profile a { font-size: 0; } }
 .header__contact .call .icon-phone { -webkit-animation: call 4s linear infinite; -moz-animation: call 4s linear infinite; -ms-animation: call 4s linear infinite; -o-animation: call 4s linear infinite; animation: call 4s linear infinite; }
 @media only screen and (max-width: 660px) { .header__contact .call { margin-right: 5px; }
-  .header__contact .call i { display: none; }
-  .header__contact .call a { font-size: 16px; } }
+  .header__contact .call a { font-size: 0px; } }
 
 @-moz-keyframes call { 0% { -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   8% { -ms-transform: rotate(-13deg); -webkit-transform: rotate(-13deg); transform: rotate(-13deg); }
@@ -260,6 +259,8 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 .out { position: relative; -moz-transition: -moz-transform 0.3s; -o-transition: -o-transform 0.3s; -webkit-transition: -webkit-transform 0.3s; transition: transform 0.3s; z-index: 2; }
 
 .is-menu .out { -moz-transform: translate(220px, 0); -ms-transform: translate(220px, 0); -webkit-transform: translate(220px, 0); transform: translate(220px, 0); }
+
+#nanobar { position: absolute; top: 0; left: 0; right: 0; height: 12px; z-index: 9999; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
