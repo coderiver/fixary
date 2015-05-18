@@ -310,7 +310,7 @@ i.icon-back { background: url('../img/icons-s92e7da8291.png') 0 -188px no-repeat
 .dropdown .dropdown__list { display: none; position: absolute; top: 59px; left: 0; right: 0; border-radius: 3px; overflow: hidden; }
 .dropdown .dropdown__list li { padding: 0 20px; line-height: 42px; font-size: 20px; color: #001d34; font-family: "Open Sans", Arial, sans-serif; font-weight: 300; background: #b4c2c6; cursor: pointer; }
 .dropdown .dropdown__list li:hover { background: #91a4ab; }
-.dropdown .input { display: none; position: absolute; top: 0; left: 0; right: 0; height: 55px; background: #fff; font-size: 22px; }
+.dropdown .input { display: none; position: absolute; top: 0; left: 0; right: 0; height: 55px; background: #fff; color: #2c465a; font-size: 22px; }
 .dropdown .input:hover { background: #fff; }
 .dropdown select { position: absolute; top: 0; visibility: hidden; }
 
