@@ -38,7 +38,11 @@
         padding: 48px 32px
     .popup__in
         +r(568)
-            padding-bottom: 80px     
+            padding-bottom: 80px
+    &.no-phone
+        .popup__in
+            +r(568)
+                padding-bottom: 0         
     .popup__close
         position: absolute
         top: 10px
@@ -61,9 +65,17 @@
     .popup__prev
         left: -45px
         +s(popup-prev)
+        +r(900)
+            left: -33px
+        +r(767)
+            display: none
     .popup__next
         right: -45px
-        +s(popup-next)                
+        +s(popup-next)
+        +r(900)
+            right: -33px
+        +r(767)
+            display: none                
     .popup__header
         margin-bottom: 10px    
         text-align: center
@@ -77,6 +89,8 @@
         +os-l
         text-transform: uppercase
         color: #425365
+        +r(767)
+            font-size: 30px
     .popup__call
         display: inline-block
         vertical-align: middle
@@ -113,9 +127,9 @@
     text-align: center
     &.invalid
         .form__alert
-            opacity: 1
+            display: block
     .form__alert
-        opacity: 0
+        display: none
         margin-bottom: 15px
         +os-l
         font-size: 18px
@@ -125,15 +139,28 @@
         display: inline-block
         vertical-align: top
         margin-left: 17px
-        +r(568)
-            width: 100% 
         &.form__col-long
             width: 440px
+            +r(568)
+                width: 100% 
         &:first-child
             margin-left: 0
+        +r(900)
+            display: block
+            margin: 0 auto
+            &:first-child
+                margin: 0 auto 12px
+        +r(568)
+            width: 100%
+            &:first-child
+                margin: 0 auto 20px     
     .form__row
         +clr
-        margin-bottom: 12px
+        margin-top: 12px
+        &:first-child
+            margin-top: 0
+        +r(568)
+            margin-top: 20px    
     .form__note
         font-size: 12px 
         color: #7D838A 
@@ -238,7 +265,10 @@
         max-width: 100%
         padding: 0 48px
     +r(568)
-        font-size: 21px    
+        font-size: 21px
+        height: 41px
+        span
+            display: none
 .password
     position: relative
     .password__switch
@@ -289,6 +319,8 @@
         border-color: #f3af0a
         &:after
             display: block
+    +r(568)
+        margin-top: 20px        
 
 .tarrif
     position: relative
@@ -320,17 +352,23 @@
         overflow: hidden
         line-height: 50px
         font-size: 14px
-        color: #bec7c7       
+        color: #bec7c7
+        +r(767)
+            display: none       
 .congrats
     position: relative
     & > img
         display: inline-block
-        margin-bottom: 45px          
+        margin-bottom: 45px
+        +r(568)
+            width: 90px           
     .congrats__title
         margin-bottom: 10px
         font-size: 50px
         +os-l
-        color: #000    
+        color: #000
+        +r(568)
+            font-size: 40px    
     .congrats__in
         font-size: 22px
         +os-l
@@ -341,35 +379,58 @@
             +tr(opacity)
             &:hover
                 opacity: 0.7
+        +r(568)
+            font-size: 18px        
 .service
     text-align: left
     .service__title
         margin-bottom: 45px
         font-size: 0
-        img, span
-            display: inline-block
-            vertical-align: middle
         img
+            float: left
             margin-right: 27px
+            +r(568)
+                width: 60px
+            +r(480)
+                width: 40px     
         span
             font-size: 50px
+            line-height: 1
             +os-l
             color: #000
+            +r(767)
+                font-size: 40px
+            +r(568)
+                font-size: 30px
+            +r(480)
+                font-size: 20px        
     .service__in
         margin-bottom: 55px
         font-size: 18px
         color: #425365
         +os-l
+        +r(767)
+            font-size: 16px
+        +r(568)
+            font-size: 14px
+        +r(480)
+            font-size: 12px        
     .service__form                             
         .input
             display: inline-block
             vertical-align: middle
             width: 42.5%
-            margin-right: 1% 
+            margin-right: 1%
+            +r(568)
+                display: block
+                width: 100%
+                margin-bottom: 20px  
         .button
             vertical-align: middle
             width: 13%
             font-size: 22px
+            +r(568)
+                width: 100% 
 .popup-article
     text-align: left
     .popup-article__title
@@ -377,6 +438,10 @@
         +os-l
         color: #000
         margin-bottom: 5px
+        +r(767)
+            font-size: 32px
+        +r(568)
+            font-size: 22px    
     .popup-article__date
         font-size: 16px
         color: #8d9fb2
@@ -390,5 +455,12 @@
         img
             display: block
             width: 100%
-            height: auto 
-            margin-bottom: 20px     
+            height: auto
+            border-radius: 3px
+            margin-bottom: 20px
+        +r(767)
+            font-size: 16px
+        +r(568)
+            font-size: 14px
+        +r(480)
+            font-size: 12px                 
