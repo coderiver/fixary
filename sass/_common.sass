@@ -29,7 +29,7 @@ body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
-	background-color: #03283D
+	background: #0b3140
 	+header_br
 		overflow-x: hidden
 	&.no-scroll
@@ -51,8 +51,8 @@ input[type="button"], input[type="submit"]
 	right: 0
 	bottom: 0
 	left: 0
-	overflow: hidden 
-	z-index: -9 
+	overflow: hidden
+	z-index: -9
 	video
 		position: absolute
 		top: 0
@@ -60,59 +60,70 @@ input[type="button"], input[type="submit"]
 		min-width: 100% 
 		min-height: 100%
 		width: auto
-		height: auto   
+		height: auto
+		
 i[class^="icon-"]
 	display: inline-block
 	img
 		width: 100%
 		height: 100%  
 i.icon-phone
-	+s(icon-phone)
-i.icon-user 
-	+s(icon-user)
+	+sr(icon-phone)
+i.icon-user
+	+sr(icon-user)
 i.icon-drop
 	+s(drop_arr)
 i.icon-setup
 	// background: url(../img/icons/icon-setup.svg) no-repeat
 	// +background-size(contain)
 	width: 62px
-	height: 62px  
+	height: auto  
 	//+s(icon-setup)
+	+r(600)
+		width: 32px
 i.icon-virus
 	//background: url(../img/icons/icon-virus.svg) no-repeat
 	//+background-size(contain)
 	width: 74px
-	height: 73px 
+	height: auto
+	+r(600)
+		width: 38px
 	//+s(icon-virus)
 i.icon-comp
 	// background: url(../img/icons/icon-comp.svg) no-repeat
 	// +background-size(contain)
 	width: 76px
-	height: 58px
+	height: auto
+	+r(600)
+		width: 38px 
 	//+s(icon-comp)
 i.icon-tuneup
 	// background: url(../img/icons/icon-tuneup.svg) no-repeat
 	// +background-size(contain)
 	width: 63px
-	height: 57px 
+	height: auto  
 	//+s(icon-tuneup)
-
+	+r(600)
+		width: 32px
 i.icon-protect
 	// background: url(../img/icons/icon-protect.svg) no-repeat
 	// +background-size(contain)
 	width: 54px
-	height: 62px 
+	height: auto  
 	//+s(icon-protect)
-
+	+r(600)
+		width: 27px
 i.icon-email
 	// background: url(../img/icons/icon-email.svg) no-repeat
 	// +background-size(contain)
 	width: 69px
-	height: 64px 
+	height: auto  
 	//+s(icon-email)
+	+r(600)
+		width: 32px
 i.icon-show
 	width: 22px
-	height: 20px 
+	height: auto  
 	//+s(icon-show)
 i.icon-close
 	+s(icon-close)
@@ -179,7 +190,7 @@ i.icon-back
 			display: block
 		+r(660)
 			margin-top: 25px
-			margin-right: 10px
+			margin-right: 23px
 		&.is-open
 			+rotate(90)		
 	   
@@ -460,7 +471,7 @@ i.icon-back
 	float: left 
 	margin-top: 12px
 	+r(660)
-		margin-top: 20px  
+		margin-top: 14px  
 .logo
 	cursor: pointer
 	+s(logo)
@@ -470,14 +481,15 @@ i.icon-back
 		-o-background-size: contain 
 		background-size: contain  
 	+r(660)
-		// +s(logo-small)
-		width: 109px 
+		width: 146px 
 		background: url(../img/logo2.png) no-repeat
 		-webkit-background-size: contain 
 		-o-background-size: contain 
 		background-size: contain  
 .logo--big
 	+s(logo--big)
+	+r(767)
+		+s(logo)
 
 .block_header
 	+os-l
@@ -485,7 +497,9 @@ i.icon-back
 	text-align: center
 	letter-spacing: 1px
 	+r(767)
-		font-size: 40px 
+		font-size: 40px
+	+r(600)
+		font-size: 30px	 
 .block_header--white
 	color: #FFF 
 .main
@@ -500,30 +514,37 @@ i.icon-back
 		width: 90% 
 	+r(600)
 		width: auto
-		border-radius: 0
+		margin: 0 15px 
+		
 
 .footer
 	max-width: 645px 
 	margin: 0 auto 
 	margin-top: 700px 
 .footer__contacts
-	width: inherit 
-	+clr
+	width: 50% 
+	margin: 0 auto 
+	text-align: center
 	a
+		display: inline-block
+		margin-top: 20px 
 		color: rgba(#fbf6e2, 0.7)
 		+os-l
 		font-size: 32px
 		letter-spacing: 1px
 		+tr(color 200ms)
 		&:hover
-			color: #fbf6e2	  
-		&.is-left
-			float: left
-		&.is-right
-			float: right
+			color: #fbf6e2
+		&:first-child
+			margin-top: 0
+	+r(767)
+		a
+			font-size: 22px			
 	+r(568)
+		width: 90%
 		text-align: center
 		a
+			font-size: 16px
 			&.is-right, &.is-left
 				display: block
 				float: none
@@ -535,9 +556,6 @@ i.icon-back
 	+border-radius(3px)
 	margin-top: 30px 
 	overflow: hidden
-	+r(568)
-		width: 90%
-		margin: 0 auto   
 	li
 		display: inline-block
 		width: 20%
@@ -563,6 +581,11 @@ i.icon-back
 				background: rgba(#c7f8ff, .3) 
 		&:first-child
 			margin-left: 0
+	+r(568)
+		width: 90%
+		margin: 0 auto
+		ul
+			text-align: center		
 	.fa
 		font-size: 26px 
 		vertical-align: bottom

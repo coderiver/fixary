@@ -1,6 +1,5 @@
 // Normally mainpage styles
 .greet
-	// padding: 215px 0 320px
 	position: relative
 	height: 100%
 	height: 100vh
@@ -8,7 +7,7 @@
 	z-index: 2
 	+r(767)
 		height: auto
-		padding-bottom: 30px
+		padding-bottom: 83px
 		margin-bottom: 0  
 	.greet__in
 		text-align: center
@@ -38,6 +37,16 @@
 		+os-l
 		font-size: 20px
 		padding-top: 10px
+	+r(767)
+		h1
+			font-size: 36px
+		p
+			font-size: 18px	
+	+r(600)
+		h1
+			font-size: 28px
+		p
+			font-size: 13px			
 .greet__form
 	font-size: 0 
 	padding-top: 40px  
@@ -115,7 +124,7 @@
 			margin: 0 auto 
 			padding: 0
 		+r(480)
-			width: 105px 		
+			width: 100%		
 
 .dropdown
 	position: relative
@@ -161,7 +170,11 @@
 		&:hover
 			background: rgba(255, 255, 255, 0.7)
 		&.is-selected
-			color: #001d34	
+			color: #001d34
+		+r(767)
+			font-size: 22px
+		+r(600)
+			font-size: 18px		
 	.dropdown__list
 		display: none
 		position: absolute
@@ -222,14 +235,20 @@
 		&:last-child
 			padding-bottom: 0
 		+r(768)
-			font-size: 18px	
+			font-size: 18px
+			padding-bottom: 30px
+		+r(600)
+			font-size: 13px		
 	& > img
 		width: 52% 
 		float: right
 		margin-left: 40px
 		+r(600)
+			position: relative
+			left: 20px
 			width: 100%
 			margin-left: 0
+			margin-bottom: 25px
 			float: none
 	+r(600)
 		margin: 0 20px
@@ -239,14 +258,19 @@
 .services
 	background-color: #faf1dc 
 	.block_header
-		padding-top: 99px 
+		padding-top: 99px
+		+r(768)
+			padding-top: 50px 
 .services__content
 	margin: 0 auto
 	padding: 63px 0 133px
 	width: 75% 
 	+clr
 	+tablet
-		width: 85% 
+		width: 85%
+	+r(767)
+		padding: 40px 0 90px
+		width: 90% 	 
 
 .services__item
 	+box
@@ -555,15 +579,13 @@
 		+box
 		padding: 20px 3%
 		border-radius: 4px
-		border: 1px solid transparent
+		+tr(color 200ms)
 		cursor: pointer
 		&:hover
-			border-color: #e9eef1
+			color: #b5b5b5
 		+r(766)
 			width: 100%
-			padding-right: 0 
-			&:nth-of-type(2n)
-				padding-left: 0	
+			padding: 20px 0
 	.advantages__item_header
 		padding-bottom: 10px 
 		h5

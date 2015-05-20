@@ -64,7 +64,7 @@ head.ready(function() {
 	
 	function scrollNav(){
 		$('.js-section').each(function(){
-            var pos = $(this).offset().top;
+            var pos = $(this).offset().top - 68;
             var id = $(this).attr('id');
             if( $(window).scrollTop() >= (pos)){
                 $('.nav__link a').removeClass('is-active');
@@ -204,6 +204,14 @@ head.ready(function() {
     	}
     	
     });
+
+    // tariff plan toggle
+	if ($('#prices').length) {
+		$('.table__about').on('click', function(){
+			$(this).parents('.table').find('.table__features').slideDown();
+			return false;
+		});
+	};
 
 	// window scroll events
 	$(window).scroll(function(){
